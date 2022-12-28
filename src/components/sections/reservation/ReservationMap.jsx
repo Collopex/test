@@ -1,6 +1,9 @@
+/* eslint-disable import/no-webpack-loader-syntax */
 import { useRef, useEffect, useState } from "react";
 import mapboxgl from "mapbox-gl";
-
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass =
+  require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 mapboxgl.accessToken =
   "pk.eyJ1IjoiY29sbG9wZXgiLCJhIjoiY2xjMHkycTdkMWVydDN4bzU5cHd6MDVrYSJ9.zpgSTi6sbASwodozDEqo9g";
 
