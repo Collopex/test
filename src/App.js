@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment, useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 
-function App() {
+import Home from "./components/pages/Home";
+import Privacy from "./components/pages/Privacy";
+import Kvkk from "./components/pages/Kvkk";
+
+export default function App() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/kvkk" element={<Kvkk />} />
+      </Routes>
+    </Fragment>
   );
 }
-
-export default App;
