@@ -22,9 +22,11 @@ html {
   font-family: "Josefin Sans", sans-serif;
   font-size: 62.5%;
 }
-
 body {
   background-color: var(--color-primary-100);
+}
+html,
+body {
   overflow-x: hidden;
 }
 
