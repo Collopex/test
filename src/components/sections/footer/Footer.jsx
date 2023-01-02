@@ -5,14 +5,14 @@ import PolicyWrapper from "../../policy/PolicyWrapper";
 function Footer() {
   return (
     <>
-      <div className="container flex-column">
-        <div className=" footer-flex xlg-margin-top ">
+      <div className="container ">
+        <div className="footer-flex-informations  ">
           <Link
             className="footer-information nav-links"
             to="about"
             spy={true}
             smooth={true}
-            offset={-150}
+            offset={-100}
             duration={1500}
           >
             Hakkımızda
@@ -23,7 +23,7 @@ function Footer() {
             to="reservation"
             spy={true}
             smooth={true}
-            offset={-150}
+            offset={100}
             duration={1500}
           >
             Bize Ulaşın
@@ -33,16 +33,19 @@ function Footer() {
             to="reservation"
             spy={true}
             smooth={true}
-            offset={-150}
+            offset={100}
             duration={1500}
           >
             Kariyer
           </Link>
         </div>
-        <Logo />
-        <p className="footer-copyrights md-margin-bottom">
-          © {new Date().getFullYear()} YENİ HİSAR GAZİNO - TÜM HAKLARI SAKLIDIR
-        </p>
+        <div className=" footer-flex-logo ">
+          <Logo />
+          <p className="footer-copyrights md-margin-bottom">
+            © {new Date().getFullYear()} YENİ HİSAR GAZİNO - TÜM HAKLARI
+            SAKLIDIR
+          </p>
+        </div>
       </div>
     </>
   );

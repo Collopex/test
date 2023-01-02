@@ -1,10 +1,9 @@
-import MenuCaption from "./MenuCaption";
-import MenuDetails from "./MenuDetails";
+import MenuItem from "./MenuItem";
+
 function MenuWrapper() {
   return (
     <>
-      <MenuCaption />
-      <MenuDetails />
+      <MenuItem />
     </>
   );
 }

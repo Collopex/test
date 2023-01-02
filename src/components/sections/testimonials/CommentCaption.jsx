@@ -1,10 +1,35 @@
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 function CommentCaption() {
+  const testimonialCaptionRef = useRef(null);
+
+  useEffect(() => {
+    const el = testimonialCaptionRef.current;
+    gsap.fromTo(
+      el,
+      {
+        x: 120,
+        opacity: 0,
+      },
+      {
+        scrollTrigger: {
+          trigger: el,
+        },
+        duration: 1.05,
+        x: 0,
+        opacity: 1,
+        ease: "power4.easeOut",
+      }
+    );
+  }, []);
   return (
     <>
-      <div className="sections">
-        <p className="caption-upper xlg-margin-top ">Izlenimler</p>
-        <h2 className="caption-middle md-margin-bottom mdm-margin-top leaves ">
-          YORUMLAR
+      <div>
+        <h2 className="caption-testimonial" ref={testimonialCaptionRef}>
+          Yorumlar
         </h2>
       </div>
     </>

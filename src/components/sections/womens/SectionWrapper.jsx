@@ -1,12 +1,10 @@
 import { Fragment } from "react";
-import WomenCaption from "./SectionWomens";
-import CardSlider from "../../carousels/Card-Slider";
+import WomenScrollProxy from "./WomenScrollProxy";
 
 function WomensWrapper() {
   return (
     <Fragment>
-      <WomenCaption />
-      <CardSlider />
+      <WomenScrollProxy />
     </Fragment>
   );
 }
