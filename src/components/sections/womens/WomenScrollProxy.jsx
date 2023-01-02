@@ -78,7 +78,7 @@ function WomenScrollProxy() {
             Bursa'nın en ünlü solistleri ile unutulmaz türk sanat müzikleri ve
             yabancı müzikler, birbirinden farklı uluslararası dansçılarmız ile
             farklı koreografik dans şölenleri her gece Yeni Hisar Gazinosun'da
-            sizleri bekliyor.
+            sizleri bekliyor...
           </div>
         </div>
         <div className="right-block-women-card" ref={womenImagesRef}>
