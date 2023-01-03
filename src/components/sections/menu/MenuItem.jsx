@@ -96,7 +96,7 @@ function MenuItem() {
         </div>
 
         <div ref={menuRefRight}>
-          <div className="menu-items-caption sm-margin-top">Yiyecekler</div>
+          <div className="menu-items-caption ">Yiyecekler</div>
           <h3 className="menu-items-sub-cation ">YEMEKLER</h3>
           <p className="menu-items">Izgara Çeşitleri</p>
           <p className="menu-items">Köfte Çeşitleri</p>
@@ -110,9 +110,8 @@ function MenuItem() {
           <p className="menu-items">Acılı Ezme</p>
           <p className="menu-items">Yoğurtlu Biber</p>
           <p className="menu-items">Beyaz Peynir</p>
-          <p className="menu-items">Patlıcan Tarator</p>
           <p className="menu-items">Patlıcanlı Haydari</p>
-          <p className="menu-items">Patlıcanlı Söğürme</p>
+          <p className="menu-items">Patlıcan Tarator</p>
           <p className="menu-items">Havuç Tarator</p>
           <p className="menu-items">Humus</p>
           <p className="menu-items">Muhammara</p>

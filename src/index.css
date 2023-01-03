@@ -662,7 +662,7 @@ li {
   align-items: center;
   width: 100%;
   padding: 0rem 0rem 5rem 0;
-  gap: 30%;
+  gap: 40rem;
 }
 
 .menu-items-caption {
@@ -692,7 +692,9 @@ li {
   margin-bottom: 4rem;
   font-family: "Great Vibes", cursive;
 }
-
+#comment {
+  padding: 10rem;
+}
 .comments {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -722,7 +724,7 @@ li {
 .thoughts-caption {
   text-align: left;
   margin-top: 10rem;
-  font-size: 6rem;
+  font-size: 5.6rem;
   font-weight: 400;
   line-height: 2;
   color: var(--color-secondary-100);
@@ -765,7 +767,7 @@ li {
 }
 .location-caption {
   text-align: right;
-  font-size: 6.2rem;
+  font-size: 5.6rem;
   font-weight: 400;
   line-height: 1.7;
   font-family: "Great Vibes", cursive;
@@ -774,8 +776,7 @@ li {
 .location-detail {
   text-align: right;
   font-family: inherit;
-  font-size: 2rem;
-  padding: 2rem;
+  font-size: 1.2rem;
   font-weight: 400;
   color: var(--color-white-100);
 }
@@ -993,8 +994,123 @@ textarea::placeholder {
 }
 
 /**************************** MEDIA QUERIES****************************/
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 84.5em) {
   html {
     font-size: 56.25%;
+  }
+  .container-grid-women {
+    min-height: 75%;
+  }
+  .aboutus-description {
+    font-size: 2.6rem;
+  }
+}
+@media only screen and (max-width: 78.125em) {
+  .heading {
+    font-size: 3.6rem;
+  }
+  .desc p {
+    font-size: 1.8rem;
+  }
+  .button-hero {
+    padding: 1.4rem 3.6rem;
+  }
+  .img {
+    top: 50%;
+    right: 2%;
+  }
+  .caption-about {
+    font-size: 4.8rem;
+  }
+
+  .aboutus-description {
+    font-size: 2.4rem;
+  }
+  .women-title {
+    font-size: 4.8rem;
+  }
+  .caption-gallery {
+    font-size: 4.8rem;
+  }
+
+  .thoughts-caption {
+    font-size: 4.8rem;
+  }
+  .location-caption {
+    font-size: 4.8rem;
+  }
+  .caption-menu {
+    font-size: 4.8rem;
+  }
+  .menu-items-caption {
+    font-size: 4rem;
+  }
+  .caption-testimonial {
+    font-size: 4.8rem;
+  }
+  .reservation-caption-up {
+    font-size: 4.8rem;
+  }
+  .author {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 64.0625em) {
+  .container-grid-women {
+    min-height: 75%;
+  }
+  .menu-items-caption {
+    font-size: 2.8rem;
+  }
+  .menu-items-sub-cation {
+    font-size: 2rem;
+  }
+  .menu-items {
+    font-size: 1.6rem;
+  }
+  .women-title {
+    font-size: 4rem;
+  }
+  .caption-gallery {
+    font-size: 4rem;
+  }
+  .caption-about {
+    font-size: 4rem;
+  }
+  .left-block-women-card {
+    font-size: 1.7rem;
+  }
+  .location-caption {
+    font-size: 4rem;
+  }
+  .caption-menu {
+    font-size: 4rem;
+  }
+  .thoughts-caption {
+    font-size: 4rem;
+  }
+  .caption-testimonial {
+    font-size: 4rem;
+  }
+  .reservation-caption-up {
+    font-size: 4rem;
+  }
+  .comments h3 {
+    font-size: 1.5rem;
+  }
+  .author {
+    font-size: 1.5rem;
+  }
+  .reservation-contactus {
+    font-size: 1.5rem;
+  }
+  .reservation-number {
+    font-size: 2rem;
+  }
+  .footer-information {
+    font-size: 1.4rem;
+  }
+  .footer-copyrights {
+    font-size: 1.4rem;
   }
 }
