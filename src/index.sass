@@ -1,0 +1,886 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Great+Vibes&family=Monoton&family=Roboto+Mono:wght@400;500;600;700&display=swap")
+
+:root
+  --color-primary-100: rgb(11, 19, 21)
+  --color-primary-200: rgb(15, 29, 34)
+  --color-secondary-100: rgb(200, 170, 128)
+  --color-secondary-200: rgb(222, 204, 179)
+  --color-tertiary-200: rgb(114, 93, 68)
+
+  --color-white-100: rgba(223, 220, 220, 0.933)
+  --color-white-200: rgba(244, 244, 244, 1)
+  --color-gray-100: rgb(169, 169, 169)
+  --color-gray-200: rgb(156, 156, 164)
+
+*,
+*::before,
+*::after
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html
+  font-family: "Roboto Mono", monospace
+  font-weight: 400
+  font-size: 62.5%
+
+body
+  background-color: var(--color-primary-100)
+
+html,
+body
+  overflow-x: hidden
+
+h1,
+h2
+  font-weight: 400
+
+ul,
+ol
+  list-style: none
+  margin: 0
+  padding: 0
+
+p
+  font-weight: 400
+  font-size: 1.8rem
+
+a
+  color: var(--color-secondary-100)
+  text-decoration: none
+  font-size: 1.6rem
+  font-weight: 400
+
+li
+  font-size: 1.6rem
+
+/****************************  HELPER CLASSES  ****************************/
+.sm-margin-top
+  margin-top: 1rem
+
+.m-margin-top
+  margin-top: 2.5rem
+
+.mdm-margin-top
+  margin-top: 4rem
+
+.mds-margin-top
+  margin-top: 6rem
+
+.lg-margin-top
+  margin-top: 8rem
+
+.xlg-margin-top
+  margin-top: 10rem
+
+.xxlg-margin-top
+  margin-top: 14rem
+
+.md-margin-bottom
+  margin-bottom: 1rem
+
+.mds-margin-bottom
+  margin-bottom: 2rem
+
+.mdm-margin-bottom
+  margin-bottom: 10rem
+
+.lg-margin-bottom
+  margin-bottom: 15rem
+
+.xxlg-margin-bottom
+  margin-bottom: 25rem
+
+.s-padding
+  padding: 3.9rem
+
+.sm-padding
+  padding: 4rem
+
+.md-padding
+  padding: 5rem
+
+.xlg-padding
+  padding: 10rem
+
+/****************************  HERO CONTENT  ****************************/
+
+.container-hero
+  width: 100%
+  height: 100vh
+
+.temp
+  position: absolute
+  width: 100%
+  height: 100vh
+  background-color: var(--color-primary-100)
+  background-size: cover
+  animation: fadeOut 5s linear forwards
+  opacity: 1
+
+@keyframes fadeOut
+  0%
+    opacity: 0
+
+  40%
+    opacity: 0
+
+  41%
+    opacity: 1
+
+  91%
+    opacity: 1
+
+  92%
+    opacity: 0
+
+  100%
+    opacity: 0
+
+.first-block
+  position: absolute
+  width: 0
+  height: 100vh
+  background-color: var(--color-white-200)
+  animation: go-left 4s cubic-bezier(0.74, 0.6, 0.4, 0.92) forwards
+  left: 0
+
+@keyframes go-left
+  0%
+    left: 0
+    width: 0%
+
+  50%
+    left: 0
+    width: 100%
+
+  100%
+    left: 100%
+    width: 0
+
+.second-block
+  position: absolute
+  width: 0
+  height: 100vh
+  background-color: var(--color-tertiary-200)
+  animation: go-left 3.2s cubic-bezier(0.74, 0.6, 0.4, 0.92) forwards
+  animation-delay: 3s
+
+.loader
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+  & ul
+    list-style: none
+    margin: 0
+    padding: 0
+
+  & ul li
+    display: inline-block
+    color: var(--color-white-100)
+    font-family: inherit
+    font-weight: bolder
+    margin: 0 0.8rem
+    font-size: 2.4rem
+    text-transform: uppercase
+    animation: loadNow 4s ease-in-out forwards
+    opacity: 0
+    transform: translateX(0rem)
+
+@keyframes loadNow
+  0%
+    opacity: 0
+    transform: translateX(8rem)
+
+  20%
+    opacity: 1
+    transform: translateX(0rem)
+
+  80%
+    opacity: 1
+    transform: translateX(0rem)
+
+  100%
+    opacity: 0
+    transform: translateX(-8rem)
+
+.loader ul li:nth-child(1)
+  animation-delay: 1.05s
+
+.loader ul li:nth-child(2)
+  animation-delay: 1.1s
+
+.loader ul li:nth-child(3)
+  animation-delay: 1.15s
+
+.loader ul li:nth-child(4)
+  animation-delay: 1.2s
+
+.loader ul li:nth-child(5)
+  animation-delay: 1.25s
+
+.loader ul li:nth-child(6)
+  animation-delay: 1.3s
+
+.loader ul li:nth-child(7)
+  animation-delay: 1.35s
+
+.loader ul li:nth-child(8)
+  animation-delay: 1.4s
+
+.loader ul li:nth-child(9)
+  animation-delay: 1.45s
+
+.loader ul li:nth-child(10)
+  animation-delay: 1.5s
+
+.third-block
+  position: absolute
+  width: 0%
+  height: 100vh
+  background: var(--color-primary-200)
+  animation: expandNow 1.4s cubic-bezier(0.19, 1, 0.22, 1) forwards
+  animation-delay: 6.2s
+
+@keyframes expandNow
+  0%
+    width: 0%
+
+  100%
+    width: 64%
+
+.menu
+  position: absolute
+  right: 0
+  margin: 3rem
+
+.logo
+  position: absolute
+  left: 0
+  margin: 2rem
+
+  & img
+    opacity: 0
+    animation: appearimg 0.1s linear forwards
+    animation-delay: 6.4s
+
+.content
+  position: absolute
+  width: 50rem
+  top: 46%
+  left: 28%
+  transform: translate(-50%, -50%)
+  text-align: left
+
+.heading
+  font-family: "Great Vibes", cursive
+  font-weight: bolder
+  font-size: 4.2rem
+  line-height: 1
+  color: var(--color-secondary-100)
+
+.desc
+  font-family: inherit
+  font-weight: bolder
+
+  & p
+    margin-top: 3rem
+    margin-bottom: 3rem
+    color: var(--color-white-100)
+    font-size: 2rem
+    font-weight: 800
+    line-height: 1.4
+
+.button-hero
+  font-family: inherit
+  border: none
+  padding: 1.6rem 4rem
+  letter-spacing: 0.2rem
+  text-transform: uppercase
+  background-color: var(--color-secondary-100)
+  cursor: pointer
+
+  &:hover
+    background-color: var(--color-secondary-200)
+
+.img img
+  width: 50rem
+  height: 100%
+  opacity: 0
+  animation: appearimg 0.1s linear forwards
+  animation-delay: 6.4s
+
+.img
+  position: absolute
+  z-index: 1000
+  top: 50%
+  right: 14%
+  transform: translateY(-65%)
+
+  &::after
+    content: ""
+    top: 0
+    left: 0
+    width: 0%
+    height: 100%
+    position: absolute
+    background: var(--color-tertiary-200)
+    animation: rev-img 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards
+    animation-delay: 6s
+
+@keyframes rev-img
+  0%
+    left: 0
+    width: 0%
+
+  50%
+    width: 50rem
+    left: 0
+
+  100%
+    left: 50rem
+    width: 0
+
+@keyframes appearimg
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1
+
+.media ul
+  list-style: none
+  position: absolute
+  bottom: 0
+  right: 2.4rem
+  padding: 1rem
+
+  & li
+    font-size: 1.8rem
+    margin: 2.4rem 0
+
+/**************************** ABOUT US ****************************/
+
+.caption-about
+  font-size: 6.4rem
+  color: var(--color-secondary-100)
+  text-align: right
+  margin-right: 20rem
+  margin-top: 10rem
+  font-family: "Great Vibes", cursive
+
+.aboutus-container
+  width: 100%
+  display: flex
+  place-self: center
+  padding: 5rem 10rem
+  margin-bottom: 10rem
+
+.aboutus-description
+  font-size: 3.2rem
+  font-weight: 400
+  line-height: 1.32
+  font-family: inherit
+  margin-bottom: 5rem
+  color: var(--color-white-100)
+
+  &-thanks
+    color: var(--color-secondary-100)
+
+/**************************** WOMENS CARD ****************************/
+
+.container-left
+  width: 50%
+  position: relative
+
+.women-card-wrappper
+  min-height: 100vh
+  height: auto
+  width: 100vw
+  margin: 0 auto
+  overflow: hidden
+  position: relative
+
+.women-title
+  font-size: 6.4rem
+  position: absolute
+  font-family: "Great Vibes", cursive
+  top: 5rem
+  left: 2.5%
+  z-index: 15
+  color: var(--color-secondary-100)
+  font-weight: 400
+
+.left-block-women-card
+  width: 35%
+  background-color: var(--color-primary-200)
+  color: var(--color-white-100)
+  min-height: 100vh
+  z-index: 5
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 2rem
+  padding: 2rem
+
+.right-block-women-card
+  color: var(--color-white-200)
+  position: absolute
+  padding-left: 30%
+  top: 5%
+  left: 85%
+  width: 90%
+
+  & .styled
+    width: 5rem
+    margin: 0 2rem
+
+/**************************** GALLERY****************************/
+.caption-gallery
+  font-size: 6.4rem
+  font-family: "Great Vibes", cursive
+  color: var(--color-secondary-100)
+  text-align: center
+  margin-top: 10rem
+
+.gallery
+  padding: 2rem
+
+/**************************** MENU ****************************/
+#menu
+  height: 100%
+  background-color: var(--color-primary-200)
+  border-top: 1px solid var(--color-secondary-100)
+  border-bottom: 1px solid var(--color-secondary-100)
+
+.caption-menu
+  padding: 0.5rem 0rem 0rem 0rem
+  font-size: 6.4rem
+  color: var(--color-secondary-100)
+  text-align: center
+  margin-top: 10rem
+  font-family: "Great Vibes", cursive
+
+.menu-flex
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100%
+  padding: 0rem 0rem 5rem 0
+  gap: 30%
+
+.menu-items-caption
+  font-size: 5rem
+  color: var(--color-tertiary-200)
+  font-family: "Monoton", cursive
+
+.menu-items-sub-cation
+  font-size: 2.4rem
+  margin-top: 1.5rem
+  color: var(--color-secondary-100)
+  font-family: inherit
+
+.menu-items
+  font-size: 2rem
+  color: var(--color-white-100)
+
+/**************************** TESTIMONIALS ****************************/
+.caption-testimonial
+  font-size: 6.4rem
+  color: var(--color-secondary-100)
+  text-align: center
+  margin-top: 10rem
+  margin-bottom: 4rem
+  font-family: "Great Vibes", cursive
+
+.comments
+  display: flex
+  font-size: 1.6rem
+  margin-top: 4rem
+  font-family: "Roboto Mono", monospace
+  align-items: center
+  height: 13rem
+  color: var(--color-white-100)
+  margin: auto
+  text-align: center
+  background: var(--color-primary-100)
+
+.author
+  font-size: 3rem
+  margin-top: 3rem
+  color: var(--color-secondary-100)
+  font-family: "Great Vibes", cursive
+
+/**************************** RESERVATION ****************************/
+
+.thoughts-caption
+  text-align: left
+  margin-top: 15rem
+  font-size: 6rem
+  font-weight: 400
+  line-height: 2
+  color: var(--color-secondary-100)
+  font-family: "Great Vibes", cursive
+
+.grid-50-50
+  margin-top: 10%
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  gap: 5rem
+  padding: 0 5rem
+
+.location
+  background-color: var(--color-primary-200)
+  border: 2px solid var(--color-secondary-100)
+  border-radius: 5%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  &-caption
+    text-align: right
+    font-size: 6.2rem
+    font-weight: 400
+    line-height: 1.7
+    font-family: "Great Vibes", cursive
+    color: var(--color-secondary-100)
+
+  &-detail
+    text-align: right
+    font-family: inherit
+    font-size: 2rem
+    padding: 2rem
+    font-weight: 400
+
+    color: var(--color-white-100)
+
+.reservation-caption-up
+  font-family: "Great Vibes", cursive
+  text-align: center
+  font-size: 6.4rem
+  margin-top: 12rem
+  font-weight: 400
+  line-height: 1.6
+  color: var(--color-secondary-100)
+
+.reservation-contactus
+  text-align: center
+  font-size: 2rem
+  font-weight: 400
+  margin-bottom: 3rem
+  color: var(--color-white-100)
+
+.reservation-number
+  text-align: center
+  font-family: inherit
+  font-size: 3rem
+  line-height: 1.6
+  font-weight: 400
+  color: var(--color-secondary-100)
+
+.grid-form
+  display: grid
+  justify-content: flex-start
+  align-items: center
+  grid-template-columns: 1fr 1fr
+  grid-gap: 2rem
+
+.expand
+  grid-column: 1/-1
+
+.inputs
+  font-size: 1.6rem
+  color: var(--color-white-100)
+  background-color: var(--color-primary-100)
+  border: solid 1px var(--color-secondary-100)
+  min-width: 100%
+  padding: 1.5rem
+  outline: none
+
+.button
+  cursor: pointer
+  font-size: 1.7rem
+  font-weight: 400
+  color: var(--color-gray-100)
+  background-color: var(--color-primary-100)
+  border: solid 1px var(--color-secondary-100)
+  min-width: 50%
+  padding: 1.5rem
+  outline: none
+
+.button:hover,
+.button:active
+  color: var(--color-white-200)
+  background-color: var(--color-secondary-100)
+
+input::placeholder
+  font-family: inherit
+  color: var(--color-gray-100)
+
+textarea::placeholder
+  font-family: inherit
+  color: var(--color-gray-100)
+
+/**************************** FOOTER ****************************/
+
+.footer-flex-informations
+  margin-top: 20rem
+  display: flex
+  gap: 3rem
+  place-content: center
+  color: var(--color-white-100)
+  margin-bottom: 1.5rem
+
+.footer-flex-logo
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  gap: 1rem
+  color: var(--color-white-100)
+
+.footer-information
+  font-size: 1.6rem
+  color: var(--color-white-100)
+
+  &:hover
+    color: var(--color-gray-100)
+
+.footer-copyrights
+  font-size: 1.6rem
+  color: var(--color-white-100)
+
+/**************************** POLICY ****************************/
+
+.policy-logo-align
+  display: flex
+  align-items: center
+  justify-content: center
+
+.policy-font-up
+  text-align: center
+  font-family: inherit
+  font-size: 3.6rem
+  font-weight: 400
+  text-transform: uppercase
+  color: var(--color-secondary-100)
+  white-space: nowrap
+
+.backto-home
+  font-size: inherit
+  font-size: 1.8rem
+  font-weight: 400
+  color: var(--color-white-100)
+
+  &:hover
+    color: var(--color-gray-100)
+
+.flex-policy
+  display: flex
+  gap: 1rem
+  place-content: center
+
+.policy-description
+  padding: 0 15rem
+  font-size: 1.7rem
+  color: var(--color-gray-200)
+  line-height: 1.7
+
+/**************************** MEDIA QUERIES****************************/
+
+@media (max-width: 83em)
+  html
+    /* 9px / 16px */
+    font-size: 56.25%
+
+  .menu
+    margin: 0 -4rem
+
+  .icons-text-prefix
+    gap: 3rem
+
+@media (max-width: 80em)
+  .menu
+    margin: 0 -4rem
+
+  .aboutus
+    padding: 3rem 17rem
+
+@media (max-width: 70.5em)
+  .menu
+    margin: 0 -6rem
+
+@media (max-width: 68.75em)
+  html
+    /* 8px /16px */
+    font-size: 53%
+
+  .menu
+    margin: 0 -7rem
+
+  .womens
+    padding: 3rem
+
+  .caption-upper
+    font-size: 2rem
+    padding: 0 0 9rem 0
+
+  .caption-middle
+    font-size: 4rem
+
+  #beverage,
+  #food,
+  #music,
+  #butler
+    height: 9rem
+
+@media (max-width: 67.75em)
+  .menu
+    margin: 0 -7rem
+    padding: 0 3rem
+
+  .inner-hero
+    height: 100vh
+
+@media (max-width: 66.55em)
+  .menu
+    margin: 0 -11rem
+
+  .womens
+    padding: 0 1rem
+
+  .caption-upper
+    font-size: 2rem
+
+  .caption-middle
+    font-size: 3.8rem
+
+@media (max-width: 64em)
+  html
+    /* 8px /16px */
+    font-size: 50%
+
+  .menu
+    padding: 0 3rem
+
+  .aboutus
+    padding: 3rem 13rem
+
+  .icon-flex-grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 2rem
+
+  .menu-details-caption
+    font-size: 3.6rem
+
+  .menu-details-upper
+    font-size: 1.8rem
+
+  .menu-details
+    font-size: 1.6rem
+
+  #beverage,
+  #food,
+  #music,
+  #butler
+    height: 7rem
+
+  .icon-caption
+    font-size: 1.6rem
+
+  .inner-hero
+    height: 70vh
+
+@media (max-width: 58.625em)
+  html
+    /* 8px /16px */
+    font-size: 48%
+
+  .reservation-contactus-up
+    font-size: 3.2rem
+
+  #foursquare,
+  #instagram,
+  #facebook
+    height: 4rem
+
+  .react-photo-album
+    padding: 0 2rem
+
+@media (max-width: 56.25em)
+  html
+    /* 8px /16px */
+    font-size: 45%
+
+  .aboutus
+    padding: 3rem 11rem
+
+  .grid-55-45-map
+    grid-template-columns: 1fr
+
+  .grid-45-55
+    grid-template-columns: 1fr
+    padding: 5rem 25rem
+
+  .map-container
+    width: 100rem
+
+@media (max-width: 53.125em)
+  html
+    /* 8px /16px */
+    font-size: 41%
+
+@media (max-width: 48em)
+  html
+    /* 8px /16px */
+    font-size: 36%
+
+  .aboutus
+    padding: 3rem 7rem
+
+@media (max-width: 42.375em)
+  html
+    /* 8px /16px */
+    font-size: 32%
+
+@media (max-width: 37em)
+  html
+    /* 8px /16px */
+    font-size: 28%
+
+  .menu-details-caption
+    font-size: 3.5rem
+    font-weight: 800
+
+  .menu-details-upper
+    font-size: 1.6rem
+
+  .menu-details
+    font-size: 1.4rem
+
+  .menu-grid
+    padding: 0 2rem
+
+  #foursquare,
+  #instagram,
+  #facebook
+    height: 3.4rem
+
+  .flex-icons
+    gap: 0.01rem
+
+@media (max-width: 31.25em)
+  html
+    /* 8px /16px */
+    font-size: 26%
+
+@media (max-width: 26.6875em)
+  html
+    /* 8px /16px */
+    font-size: 24%
+
+  .menu-grid-inner
+    gap: -10rem
