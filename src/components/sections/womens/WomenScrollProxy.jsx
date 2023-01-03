@@ -1,4 +1,5 @@
-import { Carousel } from "antd";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -69,7 +70,7 @@ function WomenScrollProxy() {
 
   return (
     <>
-      <div className="container-left ">
+      <div className="container-grid-women  ">
         <div className="women-card-wrappper">
           <div className="women-title" ref={womenCaptionRef}>
             Sanatçılarmız & Dansçılarımız
@@ -77,20 +78,34 @@ function WomenScrollProxy() {
           <div className="left-block-women-card" ref={womenDetailsRef}>
             Bursa'nın en ünlü solistleri ile unutulmaz türk sanat müzikleri ve
             yabancı müzikler, birbirinden farklı uluslararası dansçılarmız ile
-            farklı koreografik dans şölenleri her gece Yeni Hisar Gazinosun'da
+            farklı koreografik dans şölenleri her gece Yeni Hisar Gazino'da
             sizleri bekliyor...
           </div>
         </div>
+
         <div className="right-block-women-card" ref={womenImagesRef}>
           <Carousel
-            autoplay
-            autoplaySpeed={5000}
-            draggable
-            pauseOnHover={false}
+            showStatus={false}
+            showThumbs={false}
+            swipeable
+            interval={4000}
+            autoPlay={true}
+            width={480}
+            infiniteLoop
+            showArrows={false}
           >
-            <img src="images/photos/sliderimg1.webp" alt="joint img" />
-            <img src="images/photos/sliderimg1.webp" alt="joint img" />
-            <img src="images/photos/sliderimg1.webp" alt="joint img" />
+            <div>
+              <img src="images/photos/sliderimg1.webp" alt="" />
+              <p className="legend">Girl 1</p>
+            </div>
+            <div>
+              <img src="images/photos/sliderimg1.webp" alt="" />
+              <p className="legend">Girl 2</p>
+            </div>
+            <div>
+              <img src="images/photos/sliderimg1.webp" alt="" />
+              <p className="legend">Girl 3</p>
+            </div>
           </Carousel>
         </div>
       </div>

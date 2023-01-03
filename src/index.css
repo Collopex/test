@@ -32,6 +32,7 @@ body {
 
 html,
 body {
+  width: 100%;
   overflow-x: hidden;
 }
 
@@ -361,7 +362,7 @@ li {
 .third-block {
   position: absolute;
   width: 0%;
-  height: 100vh;
+  height: 100%;
   background: var(--color-primary-200);
   -webkit-animation: expandNow 1.4s cubic-bezier(0.19, 1, 0.22, 1) forwards;
   animation: expandNow 1.4s cubic-bezier(0.19, 1, 0.22, 1) forwards;
@@ -571,18 +572,12 @@ li {
 }
 
 /**************************** WOMENS CARD ****************************/
-.container-left {
-  width: 50%;
-  position: relative;
-}
-
-.women-card-wrappper {
+.container-grid-women {
+  width: 100%;
   min-height: 100vh;
-  height: auto;
-  width: 100vw;
-  margin: 0 auto;
-  overflow: hidden;
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .women-title {
@@ -597,10 +592,10 @@ li {
 }
 
 .left-block-women-card {
-  width: 35%;
+  width: 75%;
   background-color: var(--color-primary-200);
   color: var(--color-white-100);
-  min-height: 100vh;
+  min-height: 100%;
   z-index: 5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -616,12 +611,9 @@ li {
 }
 
 .right-block-women-card {
-  color: var(--color-white-200);
-  position: absolute;
-  padding-left: 30%;
-  top: 5%;
-  left: 85%;
-  width: 90%;
+  display: flex;
+  place-content: center;
+  padding: 2rem;
 }
 .right-block-women-card .styled {
   width: 5rem;
@@ -705,13 +697,14 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   font-size: 1.6rem;
   margin-top: 4rem;
   font-family: "Roboto Mono", monospace;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 13rem;
+  height: 15rem;
   color: var(--color-white-100);
   margin: auto;
   text-align: center;
@@ -728,7 +721,7 @@ li {
 /**************************** RESERVATION ****************************/
 .thoughts-caption {
   text-align: left;
-  margin-top: 15rem;
+  margin-top: 10rem;
   font-size: 6rem;
   font-weight: 400;
   line-height: 2;
@@ -744,10 +737,18 @@ li {
   padding: 0 5rem;
 }
 
+.location-div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 .location {
+  height: 80%;
+  padding: 6.8rem;
+  margin-bottom: 2rem;
   background-color: var(--color-primary-200);
   border: 2px solid var(--color-secondary-100);
-  border-radius: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -992,212 +993,8 @@ textarea::placeholder {
 }
 
 /**************************** MEDIA QUERIES****************************/
-@media (max-width: 83em) {
+@media only screen and (max-width: 75em) {
   html {
-    /* 9px / 16px */
     font-size: 56.25%;
-  }
-  .menu {
-    margin: 0 -4rem;
-  }
-  .icons-text-prefix {
-    gap: 3rem;
-  }
-}
-@media (max-width: 80em) {
-  .menu {
-    margin: 0 -4rem;
-  }
-  .aboutus {
-    padding: 3rem 17rem;
-  }
-}
-@media (max-width: 70.5em) {
-  .menu {
-    margin: 0 -6rem;
-  }
-}
-@media (max-width: 68.75em) {
-  html {
-    /* 8px /16px */
-    font-size: 53%;
-  }
-  .menu {
-    margin: 0 -7rem;
-  }
-  .womens {
-    padding: 3rem;
-  }
-  .caption-upper {
-    font-size: 2rem;
-    padding: 0 0 9rem 0;
-  }
-  .caption-middle {
-    font-size: 4rem;
-  }
-  #beverage,
-  #food,
-  #music,
-  #butler {
-    height: 9rem;
-  }
-}
-@media (max-width: 67.75em) {
-  .menu {
-    margin: 0 -7rem;
-    padding: 0 3rem;
-  }
-  .inner-hero {
-    height: 100vh;
-  }
-}
-@media (max-width: 66.55em) {
-  .menu {
-    margin: 0 -11rem;
-  }
-  .womens {
-    padding: 0 1rem;
-  }
-  .caption-upper {
-    font-size: 2rem;
-  }
-  .caption-middle {
-    font-size: 3.8rem;
-  }
-}
-@media (max-width: 64em) {
-  html {
-    /* 8px /16px */
-    font-size: 50%;
-  }
-  .menu {
-    padding: 0 3rem;
-  }
-  .aboutus {
-    padding: 3rem 13rem;
-  }
-  .icon-flex-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-  .menu-details-caption {
-    font-size: 3.6rem;
-  }
-  .menu-details-upper {
-    font-size: 1.8rem;
-  }
-  .menu-details {
-    font-size: 1.6rem;
-  }
-  #beverage,
-  #food,
-  #music,
-  #butler {
-    height: 7rem;
-  }
-  .icon-caption {
-    font-size: 1.6rem;
-  }
-  .inner-hero {
-    height: 70vh;
-  }
-}
-@media (max-width: 58.625em) {
-  html {
-    /* 8px /16px */
-    font-size: 48%;
-  }
-  .reservation-contactus-up {
-    font-size: 3.2rem;
-  }
-  #foursquare,
-  #instagram,
-  #facebook {
-    height: 4rem;
-  }
-  .react-photo-album {
-    padding: 0 2rem;
-  }
-}
-@media (max-width: 56.25em) {
-  html {
-    /* 8px /16px */
-    font-size: 45%;
-  }
-  .aboutus {
-    padding: 3rem 11rem;
-  }
-  .grid-55-45-map {
-    grid-template-columns: 1fr;
-  }
-  .grid-45-55 {
-    grid-template-columns: 1fr;
-    padding: 5rem 25rem;
-  }
-  .map-container {
-    width: 100rem;
-  }
-}
-@media (max-width: 53.125em) {
-  html {
-    /* 8px /16px */
-    font-size: 41%;
-  }
-}
-@media (max-width: 48em) {
-  html {
-    /* 8px /16px */
-    font-size: 36%;
-  }
-  .aboutus {
-    padding: 3rem 7rem;
-  }
-}
-@media (max-width: 42.375em) {
-  html {
-    /* 8px /16px */
-    font-size: 32%;
-  }
-}
-@media (max-width: 37em) {
-  html {
-    /* 8px /16px */
-    font-size: 28%;
-  }
-  .menu-details-caption {
-    font-size: 3.5rem;
-    font-weight: 800;
-  }
-  .menu-details-upper {
-    font-size: 1.6rem;
-  }
-  .menu-details {
-    font-size: 1.4rem;
-  }
-  .menu-grid {
-    padding: 0 2rem;
-  }
-  #foursquare,
-  #instagram,
-  #facebook {
-    height: 3.4rem;
-  }
-  .flex-icons {
-    gap: 0.01rem;
-  }
-}
-@media (max-width: 31.25em) {
-  html {
-    /* 8px /16px */
-    font-size: 26%;
-  }
-}
-@media (max-width: 26.6875em) {
-  html {
-    /* 8px /16px */
-    font-size: 24%;
-  }
-  .menu-grid-inner {
-    gap: -10rem;
   }
 }

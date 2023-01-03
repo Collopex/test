@@ -1,16 +1,11 @@
-import { Carousel } from "antd";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function CommentSlider() {
   return (
     <>
       <div>
-        <Carousel
-          autoplay
-          autoplaySpeed={4000}
-          draggable
-          dots={false}
-          pauseOnHover={false}
-        >
+        <Carousel showStatus={false} showThumbs={false} infiniteLoop autoPlay>
           <div className="comments">
             <h3>
               Çok sevdiğim mekanlardan biri. Alemi sevenlerin Bursa'daki tek
