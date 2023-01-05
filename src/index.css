@@ -1185,12 +1185,15 @@ textarea::placeholder {
     padding: 5rem;
   }
   .img {
-    top: 30%;
-    right: 48%;
+    top: 32%;
+    right: 44%;
     transform: translate(50%, -50%);
   }
   .img img {
     width: 30rem;
+  }
+  .grid-50-50 {
+    padding: 1rem;
   }
 
   .heading {
@@ -1243,6 +1246,9 @@ textarea::placeholder {
 }
 
 @media only screen and (max-width: 24.6875em) {
+  .grid-50-50 {
+    padding: 1rem;
+  }
   html {
     font-size: 40%;
   }
