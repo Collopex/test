@@ -1186,7 +1186,7 @@ textarea::placeholder {
   }
   .img {
     top: 30%;
-    right: 50%;
+    right: 48%;
     transform: translate(50%, -50%);
   }
   .img img {
