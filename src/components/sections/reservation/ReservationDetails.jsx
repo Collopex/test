@@ -48,15 +48,17 @@ function ReservationDetails() {
 
   return (
     <>
-      <h2 className="reservation-caption-up" ref={reservationCaptionRef}>
-        Rezervasyon
-      </h2>
-      <div ref={reservationRef}>
-        <p className="reservation-contactus">
-          Özel Localarmız için lütfen rezervasyon yapmayı unutmayınız...
-        </p>
-        <p className="reservation-number">+90 224 66 34</p>
-        <p className="reservation-number">+90 224 66 35</p>
+      <div className="reservation-container">
+        <h2 className="reservation-caption-up" ref={reservationCaptionRef}>
+          Rezervasyon
+        </h2>
+        <div ref={reservationRef}>
+          <p className="reservation-contactus">
+            Özel Localarmız için lütfen rezervasyon yapmayı unutmayınız...
+          </p>
+          <p className="reservation-number">+90 224 66 34</p>
+          <p className="reservation-number">+90 224 66 35</p>
+        </div>
       </div>
     </>
   );
