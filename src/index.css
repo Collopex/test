@@ -645,7 +645,7 @@ li {
   font-size: 6.4rem;
   color: var(--color-secondary-100);
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 5rem;
   font-family: "Great Vibes", cursive;
 }
 
@@ -1136,6 +1136,18 @@ textarea::placeholder {
     width: 100%;
     margin-left: 0.5rem;
   }
+  .grid-50-50 {
+    grid-template-columns: 1fr;
+  }
+  .location-detail {
+    text-align: center;
+  }
+  .thoughts-caption {
+    margin-top: 5rem;
+  }
+  .aboutus-description {
+    font-size: 1.9rem;
+  }
 }
 @media only screen and (max-width: 50.0625em) {
   .content {
@@ -1149,5 +1161,47 @@ textarea::placeholder {
   }
   .img img {
     width: 50rem;
+  }
+  .comments h3 {
+    font-size: 1.4rem;
+  }
+  .aboutus-description {
+    font-size: 1.6rem;
+  }
+  .left-block-women-card {
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (max-width: 41.75em) {
+  html {
+    font-weight: 600;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+  .women-title {
+    font-size: 3.6rem;
+  }
+  .caption-gallery {
+    font-size: 3.6rem;
+  }
+  .caption-about {
+    font-size: 3.6rem;
+  }
+  .location-caption {
+    font-size: 3.6rem;
+  }
+  .caption-menu {
+    font-size: 3.6rem;
+  }
+  .thoughts-caption {
+    font-size: 3.6rem;
+  }
+  .caption-testimonial {
+    font-size: 3.6rem;
+  }
+  .reservation-caption-up {
+    font-size: 3.6rem;
   }
 }
