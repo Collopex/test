@@ -1159,11 +1159,11 @@ textarea::placeholder {
   }
   .img {
     top: 40%;
-    right: 30%;
+    right: 25%;
     transform: translate(50%, -50%);
   }
   .img img {
-    width: 50rem;
+    width: 40rem;
   }
   .comments h3 {
     font-size: 1.4rem;
@@ -1182,15 +1182,15 @@ textarea::placeholder {
   .content {
     top: 69%;
     left: 50%;
-    padding: 4rem;
+    padding: 5rem;
   }
   .img {
-    top: 40%;
+    top: 30%;
     right: 50%;
     transform: translate(50%, -50%);
   }
   .img img {
-    width: 34rem;
+    width: 30rem;
   }
 
   .heading {
@@ -1236,11 +1236,7 @@ textarea::placeholder {
     width: 2rem;
   }
 }
-@media only screen and (max-width: 30.125em) {
-  .grid-50-50 {
-    padding: 1rem;
-  }
-}
+
 @media only screen and (max-width: 24.6875em) {
   html {
     font-size: 40%;
