@@ -1120,6 +1120,9 @@ textarea::placeholder {
   .second-block {
     animation: none;
   }
+  .caption-about {
+    margin-right: 10rem;
+  }
 }
 @media only screen and (max-width: 54.375em) {
   .img {
@@ -1151,16 +1154,16 @@ textarea::placeholder {
 }
 @media only screen and (max-width: 50.0625em) {
   .content {
-    top: 70%;
-    left: 50%;
+    top: 75%;
+    left: 30%;
   }
   .img {
-    top: 35%;
-    right: 50%;
+    top: 40%;
+    right: 30%;
     transform: translate(50%, -50%);
   }
   .img img {
-    width: 30rem;
+    width: 35rem;
   }
   .comments h3 {
     font-size: 1.4rem;
@@ -1203,5 +1206,62 @@ textarea::placeholder {
   }
   .reservation-caption-up {
     font-size: 3.6rem;
+  }
+  @keyframes rev-img {
+    0% {
+      left: 0;
+      width: 0%;
+    }
+    50% {
+      width: 35rem;
+      left: 0;
+    }
+    100% {
+      left: 35rem;
+      width: 0;
+    }
+  }
+}
+@media only screen and (max-width: 41.75em) {
+  #navbar {
+    width: 3.4rem;
+  }
+  #facebook {
+    width: 3.4rem;
+  }
+  #instagram {
+    width: 3.4rem;
+  }
+
+  #logo img {
+    width: 2rem;
+  }
+
+  .content {
+    top: 75%;
+    left: 35%;
+  }
+  .img {
+    top: 40%;
+    right: 30%;
+    transform: translate(50%, -50%);
+  }
+  .img img {
+    width: 33rem;
+  }
+
+  @keyframes rev-img {
+    0% {
+      left: 0;
+      width: 0%;
+    }
+    50% {
+      width: 33rem;
+      left: 0;
+    }
+    100% {
+      left: 33rem;
+      width: 0;
+    }
   }
 }

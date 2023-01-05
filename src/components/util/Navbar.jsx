@@ -1,6 +1,7 @@
 function NavbarLogo() {
   return (
     <svg
+      id="navbar"
       width="34"
       height="18"
       viewBox="0 0 34 18"
