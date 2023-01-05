@@ -1171,6 +1171,9 @@ textarea::placeholder {
   .aboutus-description {
     font-size: 1.6rem;
   }
+  .aboutus-container {
+    padding: 0rem 5rem;
+  }
   .left-block-women-card {
     font-size: 1.7rem;
   }
@@ -1284,6 +1287,7 @@ textarea::placeholder {
   }
   .aboutus-description {
     font-size: 1.6rem;
+    padding: 0rem;
   }
   .container-grid-women {
     grid-template-columns: 1fr;
