@@ -1236,6 +1236,11 @@ textarea::placeholder {
     width: 2rem;
   }
 }
+@media only screen and (max-width: 30.125em) {
+  .grid-50-50 {
+    padding: 1rem;
+  }
+}
 
 @media only screen and (max-width: 24.6875em) {
   html {
