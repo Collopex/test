@@ -1238,7 +1238,7 @@ textarea::placeholder {
 }
 @media only screen and (max-width: 24.6875em) {
   html {
-    font-size: 45%;
+    font-size: 40%;
   }
   .menu {
     position: absolute;
@@ -1288,6 +1288,9 @@ textarea::placeholder {
     padding: 2rem;
   }
   .grid-50-50 {
-    padding: 0;
+    padding: 4rem;
+  }
+  #menu {
+    padding: 3rem;
   }
 }
