@@ -138,31 +138,33 @@ function HeroSlider() {
       <div className="logo">
         <Logo />
       </div>
-      <div className="content">
-        <div className="heading">
-          <h1> Yeni Hisar Gazinosu</h1>
+      <div className="hero-grid">
+        <div className="content">
+          <div className="heading">
+            <h1> Yeni Hisar Gazinosu</h1>
+          </div>
+          <div className="desc">
+            <p>
+              Bursa'nın 1 numaralı eğlence adresi her gece ışıklarını sizler
+              için açıyor...
+            </p>
+          </div>
+          <Link
+            className="link"
+            to="reservation"
+            spy={true}
+            smooth={true}
+            offset={550}
+            duration={1400}
+          >
+            <button type="button" className="button-hero">
+              Rezervasyon
+            </button>
+          </Link>
         </div>
-        <div className="desc">
-          <p>
-            Bursa'nın 1 numaralı eğlence adresi her gece ışıklarını sizler için
-            açıyor...
-          </p>
+        <div className="img">
+          <img src="images/photos/img4.jpg" alt="joint img" />
         </div>
-        <Link
-          className="link"
-          to="reservation"
-          spy={true}
-          smooth={true}
-          offset={550}
-          duration={1400}
-        >
-          <button type="button" className="button-hero">
-            Rezervasyon
-          </button>
-        </Link>
-      </div>
-      <div className="img">
-        <img src="images/photos/img4.jpg" alt="joint img" />
       </div>
       <div className="media">
         <ul>

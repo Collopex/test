@@ -1155,12 +1155,12 @@ textarea::placeholder {
     left: 50%;
   }
   .img {
-    top: 30%;
+    top: 35%;
     right: 50%;
     transform: translate(50%, -50%);
   }
   .img img {
-    width: 50rem;
+    width: 30rem;
   }
   .comments h3 {
     font-size: 1.4rem;
