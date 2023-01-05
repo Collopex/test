@@ -1243,16 +1243,18 @@ textarea::placeholder {
   #instagram {
     width: 3.4rem;
   }
-
-  #logo img {
-    width: 2rem;
+  .grid-50-50 {
+    padding: 2rem;
+  }
+  .reservation-contactus {
+    padding: 2rem;
   }
 }
 @media only screen and (max-width: 30.125em) {
   .grid-50-50 {
     padding: 1rem;
   }
-  .reservation-container {
+  .reservation-contactus {
     padding: 2rem;
   }
 }
