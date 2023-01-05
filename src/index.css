@@ -255,7 +255,7 @@ li {
   font-family: inherit;
   font-weight: bolder;
   margin: 0 0.8rem;
-  font-size: 2.4rem;
+  font-size: 2rem;
   text-transform: uppercase;
   -webkit-animation: loadNow 4s ease-in-out forwards;
   animation: loadNow 4s ease-in-out forwards;
@@ -1138,6 +1138,20 @@ textarea::placeholder {
   .img img {
     width: 45rem;
   }
+  @keyframes rev-img {
+    0% {
+      left: 0;
+      width: 0%;
+    }
+    50% {
+      width: 45rem;
+      left: 0;
+    }
+    100% {
+      left: 45rem;
+      width: 0;
+    }
+  }
   .aboutus-description {
     font-size: 2.6rem;
   }
@@ -1171,6 +1185,20 @@ textarea::placeholder {
   .img img {
     width: 40rem;
   }
+  @keyframes rev-img {
+    0% {
+      left: 0;
+      width: 0%;
+    }
+    50% {
+      width: 40rem;
+      left: 0;
+    }
+    100% {
+      left: 40rem;
+      width: 0;
+    }
+  }
   .comments h3 {
     font-size: 1.4rem;
   }
@@ -1200,6 +1228,20 @@ textarea::placeholder {
   }
   .img img {
     width: 30rem;
+  }
+  @keyframes rev-img {
+    0% {
+      left: 0;
+      width: 0%;
+    }
+    50% {
+      width: 30rem;
+      left: 0;
+    }
+    100% {
+      left: 30rem;
+      width: 0;
+    }
   }
   .grid-50-50 {
     padding: 1rem;
