@@ -535,7 +535,6 @@ li {
   padding: 1rem;
 }
 .media ul li {
-  font-size: 1.8rem;
   margin: 2.4rem 0;
 }
 
@@ -614,6 +613,7 @@ li {
   display: flex;
   place-content: center;
   padding: 2rem;
+  width: 85%;
 }
 .right-block-women-card .styled {
   width: 5rem;
@@ -650,19 +650,14 @@ li {
   font-family: "Great Vibes", cursive;
 }
 
-.menu-flex {
+.menu-grid {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+
   padding: 0rem 0rem 5rem 0;
-  gap: 40rem;
 }
 
 .menu-items-caption {
@@ -673,7 +668,7 @@ li {
 
 .menu-items-sub-cation {
   font-size: 2.4rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   color: var(--color-secondary-100);
   font-family: inherit;
 }
@@ -904,7 +899,7 @@ textarea::placeholder {
 
 /**************************** FOOTER ****************************/
 .footer-flex-informations {
-  margin-top: 20rem;
+  margin-top: 14rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1004,6 +999,10 @@ textarea::placeholder {
   .aboutus-description {
     font-size: 2.6rem;
   }
+  .img {
+    top: 50%;
+    right: 9%;
+  }
 }
 @media only screen and (max-width: 78.125em) {
   .heading {
@@ -1056,6 +1055,9 @@ textarea::placeholder {
   }
 }
 @media only screen and (max-width: 64.0625em) {
+  .container-grid-women {
+    min-height: 75%;
+  }
   .container-grid-women {
     min-height: 75%;
   }
@@ -1112,5 +1114,27 @@ textarea::placeholder {
   }
   .footer-copyrights {
     font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 62.5em) {
+  html {
+    font-size: 50%;
+  }
+
+  .aboutus-description {
+    font-size: 2.6rem;
+  }
+}
+@media only screen and (max-width: 54.375em) {
+  .img {
+    top: 50%;
+    right: 1%;
+  }
+  .img img {
+    width: 45rem;
+  }
+  .aboutus-description {
+    font-size: 2.6rem;
   }
 }

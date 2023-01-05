@@ -70,7 +70,7 @@ function MenuItem() {
       <h2 className="caption-menu" ref={menuCaptionRef}>
         Menü
       </h2>
-      <div className="menu-flex">
+      <div className="menu-grid">
         <div ref={menuRefLeft}>
           <div className="menu-items-caption">Alkoller</div>
           <h3 className="menu-items-sub-cation ">BİRA</h3>

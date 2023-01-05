@@ -88,7 +88,6 @@ function WomenScrollProxy() {
             swipeable
             interval={4000}
             autoPlay={true}
-            width={480}
             infiniteLoop
             showArrows={false}
           >
