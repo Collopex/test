@@ -1237,6 +1237,9 @@ textarea::placeholder {
   }
 }
 @media only screen and (max-width: 24.6875em) {
+  html {
+    font-size: 45%;
+  }
   .menu {
     position: absolute;
   }
