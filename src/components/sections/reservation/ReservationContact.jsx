@@ -151,8 +151,8 @@ function ReservationContactUs() {
           <div className="location" ref={locationRef}>
             <h2 className="location-caption">Konumumuz</h2>
             <p className="location-detail">
-              Yeni Hisar Gazinosu Kayhan Mah. İnönü Cad. <br />
-              Ersan İş Hanı No:6, 16230 Osmangazi/Bursa
+              Yeni Hisar Gazinosu Kayhan Mah. İnönü Cad. Ersan İş Hanı No:6,
+              16230 Osmangazi/Bursa
               <br />
               <br />
               Açılış - Kapanış: 23:00 - 05:30
