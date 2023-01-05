@@ -1163,7 +1163,7 @@ textarea::placeholder {
     transform: translate(50%, -50%);
   }
   .img img {
-    width: 35rem;
+    width: 50rem;
   }
   .comments h3 {
     font-size: 1.4rem;
@@ -1177,7 +1177,20 @@ textarea::placeholder {
 }
 @media only screen and (max-width: 41.75em) {
   html {
-    font-weight: 600;
+    font-weight: 500;
+  }
+  .content {
+    top: 69%;
+    left: 50%;
+    padding: 4rem;
+  }
+  .img {
+    top: 40%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+  .img img {
+    width: 34rem;
   }
 
   .heading {
@@ -1207,20 +1220,6 @@ textarea::placeholder {
   .reservation-caption-up {
     font-size: 3.6rem;
   }
-  @keyframes rev-img {
-    0% {
-      left: 0;
-      width: 0%;
-    }
-    50% {
-      width: 35rem;
-      left: 0;
-    }
-    100% {
-      left: 35rem;
-      width: 0;
-    }
-  }
 }
 @media only screen and (max-width: 41.75em) {
   #navbar {
@@ -1236,32 +1235,56 @@ textarea::placeholder {
   #logo img {
     width: 2rem;
   }
-
-  .content {
-    top: 75%;
-    left: 35%;
+}
+@media only screen and (max-width: 24.6875em) {
+  .menu {
+    position: absolute;
   }
-  .img {
-    top: 40%;
-    right: 30%;
-    transform: translate(50%, -50%);
+  .heading {
+    font-size: 3rem;
   }
-  .img img {
-    width: 33rem;
+  .women-title {
+    font-size: 3.6rem;
   }
-
-  @keyframes rev-img {
-    0% {
-      left: 0;
-      width: 0%;
-    }
-    50% {
-      width: 33rem;
-      left: 0;
-    }
-    100% {
-      left: 33rem;
-      width: 0;
-    }
+  .caption-gallery {
+    font-size: 3.6rem;
+  }
+  .caption-about {
+    font-size: 2.8rem;
+  }
+  .location-caption {
+    font-size: 2.8rem;
+  }
+  .caption-menu {
+    font-size: 2.8rem;
+  }
+  .thoughts-caption {
+    font-size: 2.8rem;
+  }
+  .caption-testimonial {
+    font-size: 2.8rem;
+  }
+  .reservation-caption-up {
+    font-size: 2.8rem;
+  }
+  .aboutus-description {
+    font-size: 1.6rem;
+  }
+  .container-grid-women {
+    grid-template-columns: 1fr;
+  }
+  .left-block-women-card {
+    min-height: 75vh;
+    justify-self: center;
+  }
+  .right-block-women-card {
+    width: 95%;
+    justify-self: center;
+  }
+  #comment {
+    padding: 2rem;
+  }
+  .grid-50-50 {
+    padding: 0;
   }
 }
