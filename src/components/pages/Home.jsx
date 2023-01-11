@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import "../../index.css";
 
-import HeroSlider from "../sections/hero/WaveSlider";
+// import HeroSlider from "../sections/hero/WaveSlider";
 import AboutWrapper from "../sections/aboutus/SectionWrapper";
 import Footer from "../sections/footer/Footer";
 import WomensWrapper from "../sections/womens/SectionWrapper";
@@ -16,9 +16,9 @@ function Home() {
   };
   return (
     <Fragment>
-      <section id="hero">
+      {/* <section id="hero">
         <HeroSlider />
-      </section>
+      </section> */}
       <section id="about">
         <AboutWrapper />
       </section>
