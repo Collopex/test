@@ -939,7 +939,7 @@ textarea::placeholder {
     font-size: 40%;
   }
   .policy-description {
-    padding: 0rem 0rem;
+    padding: 0rem 3rem;
   }
   .hero-slider-grid {
     grid-template-columns: 1fr;
