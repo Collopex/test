@@ -875,11 +875,17 @@ textarea::placeholder {
   .caption-about {
     margin-right: 10rem;
   }
+  .policy-description {
+    padding: 0 5rem;
+  }
+  .policy-font-up {
+    font-size: 2rem;
+  }
 }
 @media only screen and (max-width: 54.375em) {
   .hero-img {
-    width: 40rem;
-    height: 44rem;
+    width: 38rem;
+    height: 40rem;
   }
   .content-img {
     margin-left: -8.5rem;
@@ -927,6 +933,9 @@ textarea::placeholder {
   }
   html {
     font-size: 40%;
+  }
+  .policy-description {
+    padding: 0rem 0rem;
   }
   .hero-slider-grid {
     grid-template-columns: 1fr;
@@ -1001,7 +1010,7 @@ textarea::placeholder {
     padding: 1rem;
   }
   .left-block-women-card {
-    min-height: 55vh;
+    min-height: 60vh;
     width: 75%;
     justify-self: center;
   }
