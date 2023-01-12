@@ -685,6 +685,7 @@ textarea::placeholder {
   text-align: center;
   font-family: inherit;
   font-size: 3.6rem;
+  margin-top: 7rem;
   font-weight: 400;
   text-transform: uppercase;
   color: var(--color-secondary-100);
@@ -712,6 +713,7 @@ textarea::placeholder {
 .policy-description {
   padding: 0 15rem;
   font-size: 1.7rem;
+  margin-bottom: 3rem;
   color: var(--color-gray-200);
   line-height: 1.7;
 }

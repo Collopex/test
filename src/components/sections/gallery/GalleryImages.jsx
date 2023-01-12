@@ -46,7 +46,7 @@ function GalleryImages() {
   }, []);
   return (
     <div className="gallery" ref={galleryRef}>
-      <PhotoAlbum layout="masonry" photos={photos} />
+      <PhotoAlbum layout="rows" photos={photos} />
     </div>
   );
 }

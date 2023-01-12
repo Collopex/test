@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 function PrivacyInformation() {
   return (
     <>
-      <div className="xlg-padding ">
+      <div>
         <h2 className="policy-font-up">Gİzlİlİk Polİtİkası</h2>
         <div className="flex-policy">
           <Link className="backto-home" to="/">

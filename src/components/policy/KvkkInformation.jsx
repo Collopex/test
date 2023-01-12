@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 function KvkkInformation() {
   return (
     <>
-      <div className="xlg-padding flex-column">
+      <div className="flex-column">
         <h2 className="policy-font-up">Kİşİsel Verİlerİn Korunması Kanunu</h2>
         <div className="flex-policy">
           <Link className="backto-home" to="/">
