@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import "../../index.css";
 
-// import HeroSlider from "../sections/hero/WaveSlider";
+import HeroSlider from "../sections/hero/WaveSlider";
 import AboutWrapper from "../sections/aboutus/SectionWrapper";
 import Footer from "../sections/footer/Footer";
 import WomensWrapper from "../sections/womens/SectionWrapper";
@@ -14,38 +14,41 @@ function Home() {
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   };
+
   return (
     <Fragment>
-      {/* <section id="hero">
-        <HeroSlider />
-      </section> */}
-      <section id="about">
-        <AboutWrapper />
-      </section>
+      <div>
+        <section id="hero">
+          <HeroSlider />
+        </section>
+        <section id="about">
+          <AboutWrapper />
+        </section>
 
-      <section id="women">
-        <WomensWrapper />
-      </section>
+        <section id="women">
+          <WomensWrapper />
+        </section>
 
-      <section id="gallery">
-        <GalleryWrapper />
-      </section>
+        <section id="gallery">
+          <GalleryWrapper />
+        </section>
 
-      <section id="menu">
-        <MenuWrapper />
-      </section>
+        <section id="menu">
+          <MenuWrapper />
+        </section>
 
-      <section id="comment">
-        <CommentsWrapper />
-      </section>
+        <section id="comment">
+          <CommentsWrapper />
+        </section>
 
-      <section id="reservation">
-        <ReservationWrapper />
-      </section>
+        <section id="reservation">
+          <ReservationWrapper />
+        </section>
 
-      <footer id="footer">
-        <Footer />
-      </footer>
+        <footer id="footer">
+          <Footer />
+        </footer>
+      </div>
     </Fragment>
   );
 }

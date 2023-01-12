@@ -78,7 +78,7 @@ function MenuItem() {
           <p className="menu-items">Miller</p>
           <h3 className="menu-items-sub-cation ">VİSKİ</h3>
           <p className="menu-items">Chivas Regal</p>
-          <p className="menu-items">J&B</p>
+          <p className="menu-items">Jack Daniel's </p>
           <h3 className="menu-items-sub-cation ">RAKI</h3>
           <p className="menu-items">Yeni Rakı</p>
           <p className="menu-items">Tekirdağ</p>

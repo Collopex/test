@@ -55,8 +55,12 @@ function ReservationDetails() {
         <p className="reservation-contactus">
           Özel Localarmız için lütfen rezervasyon yapmayı unutmayınız...
         </p>
-        <p className="reservation-number">+90 224 66 34</p>
-        <p className="reservation-number">+90 224 66 35</p>
+        <p typeof="tel" className="reservation-number">
+          +90 224 66 34
+        </p>
+        <p typeof="tel" className="reservation-number">
+          +90 224 66 35
+        </p>
       </div>
     </>
   );

@@ -14,8 +14,8 @@ const photos = [
   { src: "images/photos/img6.jpg", width: 800, height: 533 },
   { src: "images/photos/img7.jpg", width: 800, height: 533 },
   { src: "images/photos/img8.jpg", width: 800, height: 533 },
-  { src: "images/photos/img9.jpg", width: 800, height: 533 },
   { src: "images/photos/img10.jpg", width: 800, height: 533 },
+  { src: "images/photos/img11.jpg", width: 800, height: 533 },
   { src: "images/photos/img16.jpg", width: 800, height: 533 },
   { src: "images/photos/img14.jpg", width: 800, height: 533 },
   { src: "images/photos/img13.jpg", width: 800, height: 533 },
@@ -46,7 +46,7 @@ function GalleryImages() {
   }, []);
   return (
     <div className="gallery" ref={galleryRef}>
-      <PhotoAlbum layout="rows" photos={photos} className="hover-image" />
+      <PhotoAlbum layout="masonry" photos={photos} />
     </div>
   );
 }
