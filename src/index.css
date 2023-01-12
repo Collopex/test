@@ -347,6 +347,7 @@ li {
 
 .gallery {
   padding: 2rem;
+  margin-bottom: 7rem;
 }
 
 /**************************** MENU ****************************/
@@ -421,7 +422,7 @@ li {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 15rem;
+  height: 16.7rem;
   color: var(--color-white-100);
   margin: auto;
   text-align: center;
@@ -819,13 +820,13 @@ textarea::placeholder {
     font-size: 4rem;
   }
   .comments h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   .author {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .reservation-contactus {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   .reservation-number {
     font-size: 2rem;
@@ -919,6 +920,7 @@ textarea::placeholder {
   .aboutus-description {
     font-size: 1.6rem;
     margin-top: 2rem;
+    margin-bottom: 9rem;
   }
   .aboutus-container {
     padding: 0rem 5rem;
@@ -947,7 +949,7 @@ textarea::placeholder {
     height: 100vh;
   }
   .content-img {
-    height: 70vh;
+    height: 60vh;
   }
   .content-img {
     margin-left: 0;
@@ -988,12 +990,12 @@ textarea::placeholder {
     padding: 2rem;
   }
   .left-block-women-card {
-    min-height: 80vh;
+    min-height: 70vh;
     width: 70%;
     justify-self: center;
   }
   .women-title {
-    left: 24%;
+    left: 22%;
   }
   .right-block-women-card {
     width: 70%;
@@ -1010,7 +1012,7 @@ textarea::placeholder {
     padding: 1rem;
   }
   .left-block-women-card {
-    min-height: 60vh;
+    min-height: 50vh;
     width: 75%;
     justify-self: center;
   }
@@ -1034,30 +1036,41 @@ textarea::placeholder {
     gap: 4rem;
     margin-top: 2rem;
   }
+  .women-title {
+    font-size: 4.2rem;
+    font-weight: 500;
+  }
 
   .caption-gallery {
-    font-size: 3.6rem;
+    font-size: 4.2rem;
+    font-weight: 500;
   }
   .caption-about {
-    font-size: 3rem;
+    font-size: 4.2rem;
+    font-weight: 500;
   }
   .location-caption {
-    font-size: 3rem;
+    font-size: 4.2rem;
+    font-weight: 500;
   }
   .caption-menu {
-    font-size: 3rem;
+    font-size: 4.2rem;
+    font-weight: 500;
   }
   .thoughts-caption {
-    font-size: 3rem;
+    font-size: 4.2rem;
+    font-weight: 500;
   }
   .caption-testimonial {
-    font-size: 3rem;
+    font-size: 4.2rem;
+    font-weight: 500;
   }
   .reservation-caption-up {
-    font-size: 3rem;
+    font-size: 4.2rem;
+    font-weight: 500;
   }
   .aboutus-description {
-    font-size: 1.6rem;
+    font-size: 1.75rem;
     padding: 0rem;
   }
   .container-grid-women {
