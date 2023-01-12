@@ -147,7 +147,7 @@ li {
 }
 
 /****************************  NAVBAR  ****************************/
-#navbar {
+#navbarlogo {
   width: 4rem;
   height: 4rem;
 }
@@ -157,7 +157,7 @@ li {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 1.7rem 2.9rem;
+  padding: 2rem 2.9rem;
   align-items: center;
 }
 /****************************  HERO CONTENT  ****************************/
@@ -399,7 +399,7 @@ li {
   color: var(--color-secondary-100);
   text-align: center;
   margin-top: 10rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   font-family: "Great Vibes", cursive;
 }
 
@@ -938,8 +938,7 @@ textarea::placeholder {
     height: 100vh;
   }
   .content-img {
-    height: 40vh;
-    margin-bottom: 15rem;
+    height: 70vh;
   }
   .content-img {
     margin-left: 0;
