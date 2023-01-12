@@ -99,6 +99,7 @@ function HeroSlider() {
               </button>
             </Link>
           </div>
+
           <div className="content-img">
             <img
               src="images/photos/heroimg.png"
