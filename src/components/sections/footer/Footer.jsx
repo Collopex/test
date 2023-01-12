@@ -28,16 +28,6 @@ function Footer() {
           >
             Bize Ulaşın
           </Link>
-          <Link
-            className="footer-information nav-links"
-            to="reservation"
-            spy={true}
-            smooth={true}
-            offset={100}
-            duration={1500}
-          >
-            Kariyer
-          </Link>
         </div>
         <div className=" footer-flex-logo ">
           <Logo />

@@ -13,15 +13,15 @@ function NavbarWrapper() {
     gsap.fromTo(
       el,
       {
-        y: 60,
+        y: 80,
         opacity: 0,
       },
       {
         scrollTrigger: {
           trigger: el,
         },
-        duration: 1.15,
-        delay: 1.4,
+        duration: 1,
+        delay: 1.1,
         y: 0,
         opacity: 1,
         ease: "power4.easeOut",

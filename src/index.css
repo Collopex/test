@@ -232,15 +232,15 @@ li {
   justify-content: center;
   height: 100vh;
   opacity: 0;
-  -webkit-animation: appearimg 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-  animation: appearimg 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-  -webkit-animation-delay: 1.2s;
-  animation-delay: 1.2s;
+  -webkit-animation: appearimg 1.7s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation: appearimg 1.7s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  -webkit-animation-delay: 1.1s;
+  animation-delay: 1.1s;
 }
 
 @keyframes appearimg {
-  1% {
-    transform: translateX(6rem);
+  0% {
+    transform: translateX(9rem);
     opacity: 0;
   }
 
@@ -626,16 +626,22 @@ textarea::placeholder {
 }
 
 /**************************** FOOTER ****************************/
+#footer {
+  background-color: var(--color-primary-200);
+}
+
 .footer-flex-informations {
-  margin-top: 14rem;
+  border-top: solid 1px var(--color-secondary-100);
+  margin-top: 15rem;
   display: grid;
-  gap: 1.2rem;
+  gap: 5rem;
   grid-auto-flow: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   color: var(--color-white-100);
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
+  padding: 3rem;
 }
 
 .footer-flex-logo {
@@ -652,7 +658,7 @@ textarea::placeholder {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 3.5rem;
   color: var(--color-white-100);
 }
 
@@ -670,6 +676,9 @@ textarea::placeholder {
 }
 
 /**************************** POLICY ****************************/
+.nav-links {
+  cursor: pointer;
+}
 .policy-logo-align {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1014,6 +1023,9 @@ textarea::placeholder {
   .grid-50-50 {
     padding: 1rem;
   }
+  .footer-flex-informations {
+    gap: 1.4rem;
+  }
   .left-block-women-card {
     min-height: 50vh;
     width: 75%;
@@ -1039,6 +1051,7 @@ textarea::placeholder {
     gap: 4rem;
     margin-top: 2rem;
   }
+
   .women-title {
     font-size: 4.2rem;
     font-weight: 500;
