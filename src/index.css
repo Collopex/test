@@ -935,10 +935,10 @@ textarea::placeholder {
     height: 100%;
   }
   .content-hero {
-    height: 70vh;
+    height: 100vh;
   }
   .content-img {
-    height: 10vh;
+    height: 20vh;
     margin-bottom: 15rem;
   }
   .content-img {
