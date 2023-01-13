@@ -5,7 +5,14 @@ function CommentSlider() {
   return (
     <>
       <div>
-        <Carousel showStatus={false} showThumbs={false} infiniteLoop autoPlay>
+        <Carousel
+          showStatus={false}
+          showThumbs={false}
+          interval={6000}
+          autoPlay={true}
+          infiniteLoop
+          showArrows={false}
+        >
           <div className="comments">
             <h3>
               Çok sevdiğim mekanlardan biri. Alemi sevenlerin Bursa'daki tek

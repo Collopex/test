@@ -78,9 +78,6 @@ function ReservationContactUs() {
 
   return (
     <>
-      <div>
-        <br />
-      </div>
       <div className=" grid-50-50">
         <div ref={messageRef}>
           <h2 className="thoughts-caption">Fikirleriniz Bizim İçin Değerli</h2>

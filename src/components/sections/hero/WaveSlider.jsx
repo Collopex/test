@@ -1,27 +1,18 @@
-import { Link } from "react-scroll";
 import { useEffect, useRef } from "react";
-import NavbarWrapper from "./Navbar";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
 
 function HeroSlider() {
   const heroCaption = useRef(null);
   const heroDetail = useRef(null);
-  const heroButton = useRef(null);
 
   useEffect(() => {
-    const el = heroCaption.current;
     gsap.fromTo(
-      el,
+      ".content-caption",
       {
         y: 60,
         opacity: 0,
       },
       {
-        scrollTrigger: {
-          trigger: el,
-        },
         duration: 1.05,
         delay: 1.1,
         y: 0,
@@ -32,51 +23,24 @@ function HeroSlider() {
   }, []);
 
   useEffect(() => {
-    const el = heroDetail.current;
     gsap.fromTo(
-      el,
+      ".content-detail",
       {
         y: 60,
         opacity: 0,
       },
       {
-        scrollTrigger: {
-          trigger: el,
-        },
         duration: 1.05,
         delay: 1.1,
         y: 0,
         opacity: 1,
         ease: "power4.easeOut",
-      }
-    );
-  }, []);
-
-  useEffect(() => {
-    const el = heroButton.current;
-    gsap.fromTo(
-      el,
-      {
-        y: 100,
-        opacity: 0,
-      },
-      {
-        delay: 1.1,
-        duration: 1,
-        y: 0,
-        opacity: 1,
-        ease: "power2.easeOut",
-        stagger: {
-          from: "start",
-          amount: 0.5,
-        },
       }
     );
   }, []);
 
   return (
     <>
-      <NavbarWrapper />
       <div className="container-hero">
         <div className="hero-slider-grid">
           <div className="content-hero">
@@ -87,22 +51,11 @@ function HeroSlider() {
               Bursa'nın 1 numaralı eğlence adresi her gece sizler için
               kapılarını açıyor...
             </p>
-            <Link
-              to="reservation"
-              spy={true}
-              smooth={true}
-              offset={600}
-              duration={1500}
-            >
-              <button className="content-button" ref={heroButton}>
-                Rezervasyon
-              </button>
-            </Link>
           </div>
 
           <div className="content-img">
             <img
-              src="images/photos/heroimg.png"
+              src="images/photos/heroimg.webp"
               alt="Joint Soloists"
               className="hero-img"
               height={"auto"}

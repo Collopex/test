@@ -9,6 +9,7 @@ import GalleryWrapper from "../sections/gallery/GalleryWrapper";
 import MenuWrapper from "../sections/menu/MenuWrapper";
 import CommentsWrapper from "../sections/testimonials/CommentsWrapper";
 import ReservationWrapper from "../sections/reservation/ReservationWrapper";
+import NavbarWrapper from "../sections/hero/Navbar";
 
 function Home() {
   window.onbeforeunload = function () {
@@ -17,6 +18,9 @@ function Home() {
 
   return (
     <Fragment>
+      <div>
+        <NavbarWrapper />
+      </div>
       <div>
         <section id="hero">
           <HeroSlider />
