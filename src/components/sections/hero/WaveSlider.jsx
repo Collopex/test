@@ -9,12 +9,12 @@ function HeroSlider() {
     gsap.fromTo(
       ".content-caption",
       {
-        y: 60,
+        y: -45,
         opacity: 0,
       },
       {
-        duration: 1.05,
-        delay: 1.1,
+        duration: 1,
+        delay: 1.3,
         y: 0,
         opacity: 1,
         ease: "power4.easeOut",
@@ -26,12 +26,12 @@ function HeroSlider() {
     gsap.fromTo(
       ".content-detail",
       {
-        y: 60,
+        y: -45,
         opacity: 0,
       },
       {
-        duration: 1.05,
-        delay: 1.1,
+        duration: 1,
+        delay: 1.3,
         y: 0,
         opacity: 1,
         ease: "power4.easeOut",

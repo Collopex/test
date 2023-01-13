@@ -14,12 +14,12 @@ function NavbarWrapper() {
     gsap.fromTo(
       ".navbar",
       {
-        y: 80,
+        y: -55,
         opacity: 0,
       },
       {
         duration: 1,
-        delay: 1.1,
+        delay: 1.3,
         y: 0,
         opacity: 1,
         ease: "power4.easeOut",

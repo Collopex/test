@@ -15,14 +15,14 @@ function WomenScrollProxy() {
     gsap.fromTo(
       el,
       {
-        x: -120,
+        x: -100,
         opacity: 0,
       },
       {
         scrollTrigger: {
           trigger: el,
         },
-        duration: 1.05,
+        duration: 1,
         x: 0,
         opacity: 1,
         ease: "power4.easeOut",
@@ -34,14 +34,14 @@ function WomenScrollProxy() {
     gsap.fromTo(
       el,
       {
-        x: 120,
+        x: 100,
         opacity: 0,
       },
       {
         scrollTrigger: {
           trigger: el,
         },
-        duration: 1.05,
+        duration: 1,
         x: 0,
         opacity: 1,
         ease: "power4.easeOut",
@@ -53,14 +53,14 @@ function WomenScrollProxy() {
     gsap.fromTo(
       el,
       {
-        z: 50,
+        z: 80,
         opacity: 0,
       },
       {
         scrollTrigger: {
           trigger: el,
         },
-        duration: 1.05,
+        duration: 1,
         z: 0,
         opacity: 1,
         ease: "power4.easeOut",

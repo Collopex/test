@@ -31,14 +31,14 @@ function AboutCaption() {
     gsap.fromTo(
       el,
       {
-        y: 130,
+        y: 100,
         opacity: 0,
       },
       {
         scrollTrigger: {
           trigger: el,
         },
-        duration: 1.05,
+        duration: 1,
         y: 0,
         opacity: 1,
         ease: "power4.easeOut",

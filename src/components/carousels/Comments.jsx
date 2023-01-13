@@ -11,7 +11,6 @@ function CommentSlider() {
           interval={6000}
           autoPlay={true}
           infiniteLoop
-          showArrows={false}
         >
           <div className="comments">
             <h3>
