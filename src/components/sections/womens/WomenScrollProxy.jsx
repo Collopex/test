@@ -70,14 +70,14 @@ function WomenScrollProxy() {
 
   return (
     <>
-      <div className="container-grid-women  ">
+      <div className="container-grid-women">
         <div className="women-title" ref={womenCaptionRef}>
           Sanatçılarmız & Dansçılarımız
         </div>
         <div className="left-block-women-card" ref={womenDetailsRef}>
           Bursa'nın en ünlü solistleri ile unutulmaz türk sanat müzikleri ve
           yabancı müzikler, birbirinden farklı uluslararası dansçılarmız ile
-          farklı koreografik dans şölenleri her gece Yeni Hisar Gazino'da
+          farklı koreografik dans şölenleri ile her gece Yeni Hisar Gazino'da
           sizleri bekliyor...
         </div>
 

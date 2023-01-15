@@ -17,9 +17,9 @@ function CommentSlider() {
               Çok sevdiğim mekanlardan biri. Alemi sevenlerin Bursa'daki tek
               eğlence mekânı
             </h3>
-            <p className="author ">- Mustafa A.</p>
+            <p className="author">- Mustafa A.</p>
           </div>
-          <div className="comments ">
+          <div className="comments">
             <h3>
               Mezeler harika, çalışanlar kibar, ortam sıcacık, kızlar güzel hele
               bir de dostlarlaysan keyfe diyecek yok..

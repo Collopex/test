@@ -61,7 +61,7 @@ function AboutCaption() {
           müşterilerimize en iyi hizmeti sağlamak oldu.
           <span className="aboutus-description-thanks">
             "Bu zamana kadar bizi seçtiğiniz için sizlere teşekkür ederiz ve
-            sizleri tekrardan görmekten memnuniyet duyarız..."
+            sizleri tekrardan aramızda görmekten memnuniyet duyarız..."
           </span>
         </p>
       </div>

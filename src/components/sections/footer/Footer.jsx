@@ -31,7 +31,7 @@ function Footer() {
         </div>
         <div className=" footer-flex-logo ">
           <Logo />
-          <p className="footer-copyrights md-margin-bottom">
+          <p className="footer-copyrights">
             © {new Date().getFullYear()} YENİ HİSAR GAZİNO - TÜM HAKLARI
             SAKLIDIR
           </p>

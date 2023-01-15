@@ -87,7 +87,7 @@ function ReservationContactUs() {
             id="message-form"
             onSubmit={handleSubmit}
           >
-            <div className="grid-form sm-margin-top">
+            <div className="grid-form ">
               <div>
                 <input
                   onChange={(event) => setUserName(event.target.value)}
