@@ -975,6 +975,7 @@ textarea::placeholder {
     min-height: 60vh;
     width: 70%;
     justify-self: center;
+    font-size: 2rem;
   }
   .women-title {
     left: 22%;
