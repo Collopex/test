@@ -473,7 +473,7 @@ nav .nav-close-btn {
   font-family: "Great Vibes", cursive;
   text-align: center;
   font-size: 6.4rem;
-  margin-top: 12rem;
+  margin-top: 8rem;
   font-weight: 400;
   line-height: 1.6;
   color: var(--color-secondary-100);
@@ -935,11 +935,8 @@ textarea::placeholder {
   }
   .content-img {
     height: 67vh;
-  }
-  .content-img {
     margin-left: 0;
   }
-
   .grid-50-50 {
     padding: 2rem;
   }
@@ -975,7 +972,7 @@ textarea::placeholder {
     padding: 2rem;
   }
   .left-block-women-card {
-    min-height: 70vh;
+    min-height: 60vh;
     width: 70%;
     justify-self: center;
   }
@@ -990,11 +987,30 @@ textarea::placeholder {
   .container-grid-women {
     grid-template-columns: 1fr;
   }
+  .content-detail {
+    font-size: 2.2rem;
+  }
+  .comments h3 {
+    font-size: 1.85rem;
+  }
+  .author {
+    font-size: 2.6rem;
+  }
+  .footer-information {
+    font-size: 1.6rem;
+  }
+  .reservation-map {
+    padding: 1rem;
+  }
 }
 
 @media only screen and (max-width: 30.125em) {
   .grid-50-50 {
     padding: 1rem;
+  }
+  .aboutus-description {
+    font-size: 1.9rem;
+    padding: 0rem;
   }
   .footer-flex-informations {
     gap: 1.4rem;
@@ -1011,6 +1027,10 @@ textarea::placeholder {
   }
   .reservation-contactus {
     padding: 2rem;
+    font-size: 1.8rem;
+  }
+  .reservation-number {
+    font-size: 2.8rem;
   }
   .container-grid-women {
     grid-template-columns: 1fr;
@@ -1018,13 +1038,17 @@ textarea::placeholder {
   .reservation-map {
     padding: 1rem;
   }
+
+  .comments {
+    height: 20rem;
+  }
 }
 @media only screen and (max-width: 24.6875em) {
   .grid-50-50 {
     padding: 1rem;
   }
   .menu-grid {
-    gap: 4rem;
+    gap: 9rem;
     margin-top: 2rem;
   }
 
@@ -1062,14 +1086,14 @@ textarea::placeholder {
     font-weight: 500;
   }
   .aboutus-description {
-    font-size: 1.75rem;
+    font-size: 2rem;
     padding: 0rem;
   }
   .container-grid-women {
     grid-template-columns: 1fr;
   }
   .left-block-women-card {
-    min-height: 70vh;
+    min-height: 55vh;
     justify-self: center;
   }
   .right-block-women-card {
@@ -1078,7 +1102,7 @@ textarea::placeholder {
     justify-self: center;
   }
   #comment {
-    padding: 2rem;
+    padding: 1rem;
   }
   #menu {
     padding: 3rem;
