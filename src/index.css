@@ -1005,6 +1005,9 @@ textarea::placeholder {
 }
 
 @media only screen and (max-width: 30.125em) {
+  .content-caption {
+    font-size: 5.8rem;
+  }
   .grid-50-50 {
     padding: 1rem;
   }
