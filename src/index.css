@@ -414,7 +414,7 @@ nav .nav-close-btn {
 }
 
 .grid-50-50 {
-  margin-top: 10%;
+  margin-top: 5%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
