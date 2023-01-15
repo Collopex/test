@@ -949,13 +949,10 @@ textarea::placeholder {
     width: 3.4rem;
   }
   html {
-    font-size: 40.5%;
+    font-size: 40.8%;
   }
   .policy-description {
     padding: 0rem 3rem;
-  }
-  .menu-items {
-    font-size: 1.8rem;
   }
   .hero-slider-grid {
     grid-template-columns: 1fr;
