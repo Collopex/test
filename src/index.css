@@ -954,6 +954,9 @@ textarea::placeholder {
   .policy-description {
     padding: 0rem 3rem;
   }
+  .menu-items {
+    font-size: 1.8rem;
+  }
   .hero-slider-grid {
     grid-template-columns: 1fr;
   }
@@ -1127,7 +1130,7 @@ textarea::placeholder {
     grid-template-columns: 1fr;
   }
   .left-block-women-card {
-    min-height: 55vh;
+    min-height: 60vh;
     justify-self: center;
   }
   .right-block-women-card {

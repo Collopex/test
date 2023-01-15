@@ -17,7 +17,7 @@ function ReservationMap() {
     <div className="reservation-map">
       <MapContainer
         center={[40.18303, 29.0682]}
-        zoom={17}
+        zoom={15.8}
         scrollWheelZoom={false}
         doubleClickZoom={true}
         maxZoom={17.9}
