@@ -334,10 +334,12 @@ nav .nav-close-btn {
   display: block;
   transition: all 0.56s;
   overflow: hidden;
+  filter: brightness(0.85);
 }
 
 .gallery-grid img:hover {
   transform: scale(1.15);
+  filter: brightness(1.05);
 }
 
 /**************************** MENU ****************************/
@@ -395,7 +397,7 @@ nav .nav-close-btn {
 }
 
 #comment {
-  padding: 5rem;
+  padding: 10rem;
 }
 
 .comments {
@@ -1032,6 +1034,9 @@ textarea::placeholder {
   }
   .reservation-map {
     padding: 1rem;
+  }
+  #comment {
+    padding: 5rem;
   }
 }
 

@@ -29,63 +29,63 @@ function GalleryImages() {
     <div className="gallery-container" ref={galleryRef}>
       <div className="gallery-grid gallery-container">
         <figure className="gallery-item">
-          <img src="images/photos/img1.jpg" alt="" />
+          <img src="images/photos/img1.jpg" alt="hisar-galeri-fotoğraflar" />
         </figure>
 
         <figure className="gallery-item">
-          <img src="images/photos/img2.jpg" alt="" />
+          <img src="images/photos/img2.jpg" alt="hisar-galeri-fotoğraflar" />
         </figure>
 
         <figure className="gallery-item">
-          <img src="images/photos/img3.jpg" alt="" />
+          <img src="images/photos/img3.jpg" alt="hisar-galeri-fotoğraflar" />
         </figure>
 
         <figure className="gallery-item">
-          <img src="images/photos/img4.jpg" alt="" />
+          <img src="images/photos/img4.jpg" alt="hisar-galeri-fotoğraflar" />
         </figure>
 
         <figure className="gallery-item">
-          <img src="images/photos/img5.jpg" alt="" />
+          <img src="images/photos/img5.jpg" alt="hisar-galeri-fotoğraflar" />
         </figure>
 
         <figure className="gallery-item">
-          <img src="images/photos/img6.jpg" alt="" />
+          <img src="images/photos/img6.jpg" alt="hisar-galeri-fotoğraflar" />
         </figure>
 
         <figure className="gallery-item">
-          <img src="images/photos/img7.jpg" alt="" />
+          <img src="images/photos/img7.jpg" alt="hisar-galeri-fotoğraflar" />
         </figure>
 
         <figure className="gallery-item">
-          <img src="images/photos/img8.jpg" alt="" />
+          <img src="images/photos/img8.jpg" alt="hisar-galeri-fotoğraflar" />
         </figure>
 
         <figure className="gallery-item">
-          <img src="images/photos/img9.jpg" alt="" />
+          <img src="images/photos/img9.jpg" alt="hisar-galeri-fotoğraflar" />
         </figure>
 
         <figure className="gallery-item">
-          <img src="images/photos/img10.jpg" alt="" />
+          <img src="images/photos/img10.jpg" alt="hisar-galeri-fotoğraflar" />
         </figure>
 
         <figure className="gallery-item">
-          <img src="images/photos/img11.jpg" alt="" />
+          <img src="images/photos/img11.jpg" alt="hisar-galeri-fotoğraflar" />
         </figure>
 
         <figure className="gallery-item">
-          <img src="images/photos/img12.jpg" alt="" />
+          <img src="images/photos/img12.jpg" alt="hisar-galeri-fotoğraflar" />
         </figure>
 
         <figure className="gallery-item">
-          <img src="images/photos/img13.jpg" alt="" />
+          <img src="images/photos/img13.jpg" alt="hisar-galeri-fotoğraflar" />
         </figure>
 
         <figure className="gallery-item">
-          <img src="images/photos/img14.jpg" alt="" />
+          <img src="images/photos/img14.jpg" alt="hisar-galeri-fotoğraflar" />
         </figure>
 
         <figure className="gallery-item">
-          <img src="images/photos/img15.jpg" alt="" />
+          <img src="images/photos/img15.jpg" alt="hisar-galeri-fotoğraflar" />
         </figure>
       </div>
     </div>
