@@ -1075,7 +1075,7 @@ textarea::placeholder {
     grid-template-columns: 1fr;
   }
   .gallery-container {
-    padding: 1.2rem 2rem;
+    padding: 1.2rem 1.8rem;
   }
   .reviews {
     gap: 5rem;
@@ -1088,13 +1088,13 @@ textarea::placeholder {
     width: 12.6rem;
   }
   #restaurant-guru {
-    width: 19.6rem;
+    width: 16.6rem;
   }
   #google-review {
-    width: 6.4rem;
+    width: 10.4rem;
   }
   #facebook-review {
-    width: 9rem;
+    width: 11rem;
   }
 }
 
