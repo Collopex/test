@@ -92,16 +92,36 @@ function WomenScrollProxy() {
             showArrows={false}
           >
             <div>
-              <img src="images/photos/sliderimg1.webp" alt="" />
+              <img
+                src="images/photos/sliderimg1.webp"
+                alt=""
+                className="girl-images-asp-ratio"
+              />
               <p className="legend">Girl 1</p>
             </div>
             <div>
-              <img src="images/photos/sliderimg1.webp" alt="" />
-              <p className="legend">Girl 2</p>
+              <img
+                src="images/photos/sliderimg1.webp"
+                alt=""
+                className="girl-images-asp-ratio"
+              />
+              <p className="legend">Girl 1</p>
             </div>
             <div>
-              <img src="images/photos/sliderimg1.webp" alt="" />
-              <p className="legend">Girl 3</p>
+              <img
+                src="images/photos/sliderimg1.webp"
+                alt=""
+                className="girl-images-asp-ratio"
+              />
+              <p className="legend">Girl 1</p>
+            </div>
+            <div>
+              <img
+                src="images/photos/sliderimg1.webp"
+                alt=""
+                className="girl-images-asp-ratio"
+              />
+              <p className="legend">Girl 1</p>
             </div>
           </Carousel>
         </div>
