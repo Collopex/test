@@ -10,7 +10,7 @@ function ReservationMap() {
   const blueIcon = new LeafIcon({
     iconUrl: require("leaflet/dist/images/marker-icon.png"),
     shadowUrl: iconShadow,
-    iconSize: [24, 36],
+    iconSize: [25, 41],
     iconAnchor: [12, 36],
   });
   return (
