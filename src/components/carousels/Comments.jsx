@@ -22,7 +22,7 @@ function CommentSlider() {
           <div className="comments">
             <h3>
               Mezeler harika, çalışanlar kibar, ortam sıcacık, kızlar güzel hele
-              bir de dostlarlaysan keyfe diyecek yok..
+              bir de dostlarlaysan keyfe diyecek yok...
             </h3>
             <p className="author">- Hüseyin P.</p>
           </div>
@@ -34,12 +34,15 @@ function CommentSlider() {
             <p className="author ">- Bülent K.</p>
           </div>
           <div className="comments ">
-            <h3>İçerisi tam bir şampiyonlar ligi gibi süper</h3>
+            <h3>İçerisi tam bir şampiyonlar ligi gibi süper.</h3>
             <p className="author">- İsmail Y.</p>
           </div>
           <div className="comments ">
-            <h3>Kaliteli ve nezih bir mekan</h3>
-            <p className="author">- İrfan C.</p>
+            <h3>
+              Eşimle beraber gitmiştik, kaliteli ve nezih bir mekan
+              önerebilceğim nadir yerlerden biri.
+            </h3>
+            <p className="author">- Aslı C.</p>
           </div>
         </Carousel>
       </div>

@@ -41,6 +41,10 @@ function ReservationContactUs() {
 
   const messageRef = useRef(null);
   const locationRef = useRef(null);
+  const foursquareRef = useRef(null);
+  const restaurantGuruRef = useRef(null);
+  const googleRef = useRef(null);
+  const facebookRef = useRef(null);
 
   useEffect(() => {
     const el = messageRef.current;
@@ -61,6 +65,7 @@ function ReservationContactUs() {
       }
     );
   }, []);
+
   useEffect(() => {
     const el = locationRef.current;
     gsap.fromTo(
@@ -81,26 +86,110 @@ function ReservationContactUs() {
     );
   }, []);
 
+  useEffect(() => {
+    const el = foursquareRef.current;
+    gsap.fromTo(
+      el,
+      {
+        y: 70,
+        opacity: 0,
+      },
+      {
+        scrollTrigger: {
+          trigger: el,
+        },
+        duration: 1.05,
+        y: 0,
+        opacity: 1,
+        ease: "power4.easeOut",
+      }
+    );
+  }, []);
+
+  useEffect(() => {
+    const el = restaurantGuruRef.current;
+    gsap.fromTo(
+      el,
+      {
+        y: 70,
+        opacity: 0,
+      },
+      {
+        scrollTrigger: {
+          trigger: el,
+        },
+        duration: 1.05,
+        delay: 0.5,
+        y: 0,
+        opacity: 1,
+        ease: "power4.easeOut",
+      }
+    );
+  }, []);
+
+  useEffect(() => {
+    const el = googleRef.current;
+    gsap.fromTo(
+      el,
+      {
+        y: 70,
+        opacity: 0,
+      },
+      {
+        scrollTrigger: {
+          trigger: el,
+        },
+        duration: 1.05,
+        delay: 1,
+        y: 0,
+        opacity: 1,
+        ease: "power4.easeOut",
+      }
+    );
+  }, []);
+
+  useEffect(() => {
+    const el = facebookRef.current;
+    gsap.fromTo(
+      el,
+      {
+        y: 70,
+        opacity: 0,
+      },
+      {
+        scrollTrigger: {
+          trigger: el,
+        },
+        duration: 1.05,
+        delay: 1.5,
+        y: 0,
+        opacity: 1,
+        ease: "power4.easeOut",
+      }
+    );
+  }, []);
+
   return (
     <>
       <div className="reviews">
-        <div className="review">
+        <div className="review" ref={foursquareRef}>
           <FoursquareReview />
           <span className="review-pts">8.4/10</span>
         </div>
-        <div className="review">
+        <div className="review" ref={restaurantGuruRef}>
           <RestaurantGuru />
           <span className="review-pts">4/5</span>
         </div>
-        <div className="review">
+        <div className="review" ref={googleRef}>
           <GoogleReview />
           <span className="review-pts">4.6/5</span>
         </div>
-        <div className="review">
+        <div className="review" ref={facebookRef}>
           <FacebookReview />
           <span className="review-pts">3.4/5</span>
         </div>
       </div>
+
       <div className=" grid-50-50">
         <div ref={messageRef}>
           <h2 className="thoughts-caption">Fikirleriniz Bizim İçin Değerli</h2>
