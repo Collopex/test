@@ -2,7 +2,7 @@
 :root {
   --color-primary-100: rgb(11, 19, 21);
   --color-primary-200: rgb(15, 29, 34);
-  --color-secondary-100: rgb(200, 170, 128);
+  --color-secondary-100: rgb(200, 169, 126);
   --color-secondary-200: rgb(222, 204, 179);
   --color-tertiary-200: rgb(114, 93, 68);
   --color-white-100: rgba(223, 220, 220, 0.933);
@@ -433,6 +433,29 @@ nav .nav-close-btn {
   font-family: "Great Vibes", cursive;
 }
 
+.reviews {
+  margin-top: 12rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.review-pts {
+  font-family: "Great Vibes", cursive;
+  font-weight: 800;
+  font-size: 3.2rem;
+  color: var(--color-secondary-100);
+}
+
 /**************************** RESERVATION ****************************/
 .thoughts-caption {
   text-align: left;
@@ -745,6 +768,9 @@ textarea::placeholder {
   .aboutus-description {
     font-size: 2.6rem;
   }
+  .reviews {
+    gap: 5rem;
+  }
 }
 @media only screen and (max-width: 78.125em) {
   .hero-img {
@@ -792,6 +818,14 @@ textarea::placeholder {
   }
   .right-block-women-card {
     width: 85%;
+  }
+  .reviews {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+
+  .review-pts {
+    font-size: 3.6rem;
   }
 }
 @media only screen and (max-width: 64.0625em) {
@@ -925,12 +959,6 @@ textarea::placeholder {
   .aboutus-description {
     font-size: 1.9rem;
   }
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-  .gallery-container {
-    padding: 0.5rem;
-  }
 }
 @media only screen and (max-width: 50.0625em) {
   .content-img {
@@ -1042,6 +1070,31 @@ textarea::placeholder {
   }
   #comment {
     padding: 5rem;
+  }
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery-container {
+    padding: 1.2rem 2rem;
+  }
+  .reviews {
+    gap: 5rem;
+  }
+  .review-pts {
+    font-size: 3.6rem;
+  }
+
+  #foursquare-review {
+    width: 18.6rem;
+  }
+  #restaurant-guru {
+    width: 25.6rem;
+  }
+  #google-review {
+    width: 12.4rem;
+  }
+  #facebook-review {
+    width: 15rem;
   }
 }
 
