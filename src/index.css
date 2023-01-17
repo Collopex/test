@@ -1075,7 +1075,7 @@ textarea::placeholder {
     grid-template-columns: 1fr;
   }
   .gallery-container {
-    padding: 1.2rem 1.8rem;
+    padding: 1.2rem 1.5rem;
   }
   .reviews {
     gap: 3rem;
