@@ -1085,16 +1085,16 @@ textarea::placeholder {
   }
 
   #foursquare-review {
-    width: 18.6rem;
+    width: 14.6rem;
   }
   #restaurant-guru {
-    width: 25.6rem;
+    width: 21.6rem;
   }
   #google-review {
-    width: 12.4rem;
+    width: 8.4rem;
   }
   #facebook-review {
-    width: 15rem;
+    width: 11rem;
   }
 }
 
