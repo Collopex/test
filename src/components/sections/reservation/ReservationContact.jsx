@@ -1,3 +1,8 @@
+import FacebookReview from "../../util/FacebookReview";
+import FoursquareReview from "../../util/FoursquareReview";
+import GoogleReview from "../../util/GoogleReview";
+import RestaurantGuru from "../../util/RestaurantGuru";
+
 import { useState, useEffect, useRef } from "react";
 import { db } from "../../../firebaseConfig";
 import { addDoc, collection } from "firebase/firestore";
@@ -78,6 +83,24 @@ function ReservationContactUs() {
 
   return (
     <>
+      <div className="reviews">
+        <div className="review">
+          <FoursquareReview />
+          <span className="review-pts">8.4/10</span>
+        </div>
+        <div className="review">
+          <RestaurantGuru />
+          <span className="review-pts">4/5</span>
+        </div>
+        <div className="review">
+          <GoogleReview />
+          <span className="review-pts">4.6/5</span>
+        </div>
+        <div className="review">
+          <FacebookReview />
+          <span className="review-pts">3.4/5</span>
+        </div>
+      </div>
       <div className=" grid-50-50">
         <div ref={messageRef}>
           <h2 className="thoughts-caption">Fikirleriniz Bizim İçin Değerli</h2>

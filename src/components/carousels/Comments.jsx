@@ -1,9 +1,5 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import FacebookReview from "../util/FacebookReview";
-import FoursquareReview from "../util/FoursquareReview";
-import GoogleReview from "../util/GoogleReview";
-import RestaurantGuru from "../util/RestaurantGuru";
 
 function CommentSlider() {
   return (
@@ -46,25 +42,6 @@ function CommentSlider() {
             <p className="author">- İrfan C.</p>
           </div>
         </Carousel>
-      </div>
-
-      <div className="reviews">
-        <div className="review">
-          <FoursquareReview />
-          <span className="review-pts">8.4/10</span>
-        </div>
-        <div className="review">
-          <RestaurantGuru />
-          <span className="review-pts">4/5</span>
-        </div>
-        <div className="review">
-          <GoogleReview />
-          <span className="review-pts">4.6/5</span>
-        </div>
-        <div className="review">
-          <FacebookReview />
-          <span className="review-pts">3.4/5</span>
-        </div>
       </div>
     </>
   );
