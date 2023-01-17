@@ -57,6 +57,7 @@ function HeroSlider() {
             <img
               src="images/photos/heroimg.webp"
               alt="Joint Soloists"
+              loading="lazy"
               className="hero-img"
               height={"auto"}
             />
