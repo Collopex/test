@@ -259,6 +259,7 @@ nav .nav-close-btn {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 4.5rem;
 }
 
 .women-title {
