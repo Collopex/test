@@ -24,7 +24,7 @@ function GalleryCaption() {
         duration: 1.05,
         y: 0,
         opacity: 1,
-        ease: "power4.easeOut",
+        ease: "Power2.easeOut",
       }
     );
   }, []);

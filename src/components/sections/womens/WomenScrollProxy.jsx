@@ -23,12 +23,12 @@ function WomenScrollProxy() {
           trigger: el,
           start: "top bottom",
           end: "center center",
-          scrub: 1,
+          scrub: 2,
         },
         duration: 1,
         x: 0,
         opacity: 1,
-        ease: "power4.easeOut",
+        ease: "Power3.easeOut",
       }
     );
   }, []);
@@ -45,13 +45,12 @@ function WomenScrollProxy() {
           trigger: el,
           start: "top bottom",
           end: "center center",
-          scrub: 1,
+          scrub: 2,
         },
         duration: 1.05,
-        delay: 0.2,
         x: 0,
         opacity: 1,
-        ease: "power4.easeOut",
+        ease: "Power3.easeOut",
       }
     );
   }, []);
@@ -68,12 +67,12 @@ function WomenScrollProxy() {
           trigger: el,
           start: "top bottom",
           end: "center center",
-          scrub: 1,
+          scrub: 2,
         },
         duration: 1,
         x: 0,
         opacity: 1,
-        ease: "power4.easeOut",
+        ease: "Power3.easeOut",
       }
     );
   }, []);

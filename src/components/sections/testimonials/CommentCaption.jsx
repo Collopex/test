@@ -11,7 +11,7 @@ function CommentCaption() {
     gsap.fromTo(
       el,
       {
-        x: 120,
+        x: 100,
         opacity: 0,
       },
       {
@@ -24,7 +24,7 @@ function CommentCaption() {
         duration: 1.05,
         x: 0,
         opacity: 1,
-        ease: "power4.easeOut",
+        ease: "Power2.easeOut",
       }
     );
   }, []);

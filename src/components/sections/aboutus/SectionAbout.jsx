@@ -12,7 +12,7 @@ function AboutCaption() {
     gsap.fromTo(
       el,
       {
-        x: -130,
+        x: -50,
         opacity: 0,
       },
       {
@@ -20,12 +20,12 @@ function AboutCaption() {
           trigger: el,
           start: "top bottom",
           end: "center center",
-          scrub: true,
+          scrub: 2,
         },
         duration: 1.05,
         x: 0,
         opacity: 1,
-        ease: "power4.easeOut",
+        ease: "Power2.easeOut",
       }
     );
   }, []);
@@ -35,7 +35,7 @@ function AboutCaption() {
     gsap.fromTo(
       el,
       {
-        x: 100,
+        x: 50,
         opacity: 0.25,
       },
       {
@@ -43,11 +43,11 @@ function AboutCaption() {
           trigger: el,
           start: "top bottom",
           end: "center center",
-          scrub: true,
+          scrub: 2,
         },
         x: 0,
         opacity: 1,
-        ease: "power4.easeOut",
+        ease: "Power2.easeOut",
       }
     );
   }, []);

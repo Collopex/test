@@ -21,12 +21,12 @@ function MenuItem() {
           trigger: el,
           start: "top bottom",
           end: "center center",
-          scrub: 1,
+          scrub: 3,
         },
         duration: 1.05,
         y: 0,
         opacity: 1,
-        ease: "power4.easeOut",
+        ease: "Power2.easeOut",
       }
     );
   }, []);
@@ -43,12 +43,12 @@ function MenuItem() {
           trigger: el,
           start: "top bottom",
           end: "center center",
-          scrub: 1,
+          scrub: 3,
         },
         duration: 1.05,
         x: 0,
         opacity: 1,
-        ease: "power4.easeOut",
+        ease: "Power2.easeOut",
       }
     );
   }, []);
@@ -65,12 +65,12 @@ function MenuItem() {
           trigger: el,
           start: "top bottom",
           end: "center center",
-          scrub: 1,
+          scrub: 3,
         },
         duration: 1.05,
         x: 0,
         opacity: 1,
-        ease: "power4.easeOut",
+        ease: "Power2.easeOut",
       }
     );
   }, []);

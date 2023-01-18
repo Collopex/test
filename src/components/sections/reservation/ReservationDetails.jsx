@@ -25,7 +25,7 @@ function ReservationDetails() {
         duration: 1.05,
         x: 0,
         opacity: 1,
-        ease: "power4.easeOut",
+        ease: "Power2.easeOut",
       }
     );
   }, []);
@@ -47,7 +47,7 @@ function ReservationDetails() {
         duration: 1.05,
         x: 0,
         opacity: 1,
-        ease: "power4.easeOut",
+        ease: "Power2.easeOut",
       }
     );
   }, []);
