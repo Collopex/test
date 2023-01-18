@@ -18,6 +18,9 @@ function AboutCaption() {
       {
         scrollTrigger: {
           trigger: el,
+          start: "top bottom",
+          end: "center center",
+          scrub: true,
         },
         duration: 1.05,
         x: 0,
@@ -26,20 +29,22 @@ function AboutCaption() {
       }
     );
   }, []);
+
   useEffect(() => {
     const el = aboutDetailsRef.current;
     gsap.fromTo(
       el,
       {
-        y: 70,
+        y: 100,
         opacity: 0,
       },
       {
         scrollTrigger: {
           trigger: el,
+          start: "top bottom",
+          end: "center center",
+          scrub: 1,
         },
-        duration: 1.05,
-        delay: 0.2,
         y: 0,
         opacity: 1,
         ease: "power4.easeOut",
@@ -52,8 +57,8 @@ function AboutCaption() {
       <div ref={aboutCaptionRef}>
         <h2 className="caption-about">Hakkımızda</h2>
       </div>
-      <div className="aboutus-container" ref={aboutDetailsRef}>
-        <p className="aboutus-description">
+      <div className="aboutus-container">
+        <p className="aboutus-description" ref={aboutDetailsRef}>
           Bursa'nın sayılı "Turistik" Gazniosu olarak 1994'den beri hizmet
           vermekten gurur duyuyoruz. Seçkin kadromuz ve zengin içeriklerimiz ile
           her zaman akıllarda kalmayı başardık. Geçmişten bu yana bir çok ünlü

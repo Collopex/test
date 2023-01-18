@@ -21,6 +21,9 @@ function WomenScrollProxy() {
       {
         scrollTrigger: {
           trigger: el,
+          start: "top bottom",
+          end: "center center",
+          scrub: 1,
         },
         duration: 1,
         x: 0,
@@ -40,6 +43,9 @@ function WomenScrollProxy() {
       {
         scrollTrigger: {
           trigger: el,
+          start: "top bottom",
+          end: "center center",
+          scrub: 1,
         },
         duration: 1.05,
         delay: 0.2,
@@ -60,6 +66,9 @@ function WomenScrollProxy() {
       {
         scrollTrigger: {
           trigger: el,
+          start: "top bottom",
+          end: "center center",
+          scrub: 1,
         },
         duration: 1,
         z: 0,

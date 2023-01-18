@@ -19,6 +19,9 @@ function MenuItem() {
       {
         scrollTrigger: {
           trigger: el,
+          start: "top bottom",
+          end: "center center",
+          scrub: 1,
         },
         duration: 1.05,
         y: 0,
@@ -38,6 +41,9 @@ function MenuItem() {
       {
         scrollTrigger: {
           trigger: el,
+          start: "top bottom",
+          end: "center center",
+          scrub: 1,
         },
         duration: 1.05,
         x: 0,
@@ -57,6 +63,9 @@ function MenuItem() {
       {
         scrollTrigger: {
           trigger: el,
+          start: "top bottom",
+          end: "center center",
+          scrub: 1,
         },
         duration: 1.05,
         x: 0,

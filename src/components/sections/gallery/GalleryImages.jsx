@@ -12,11 +12,14 @@ function GalleryImages() {
       el,
       {
         z: 50,
-        opacity: 0,
+        opacity: 1,
       },
       {
         scrollTrigger: {
           trigger: el,
+          start: "top bottom",
+          end: "center center",
+          scrub: 1,
         },
         duration: 1.05,
         z: 0,

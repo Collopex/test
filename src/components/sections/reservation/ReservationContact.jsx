@@ -57,6 +57,9 @@ function ReservationContactUs() {
       {
         scrollTrigger: {
           trigger: el,
+          start: "top bottom",
+          end: "center center",
+          scrub: 1,
         },
         duration: 1.05,
         x: 0,
@@ -77,6 +80,9 @@ function ReservationContactUs() {
       {
         scrollTrigger: {
           trigger: el,
+          start: "top bottom",
+          end: "center center",
+          scrub: 1,
         },
         duration: 1.05,
         x: 0,
@@ -97,6 +103,9 @@ function ReservationContactUs() {
       {
         scrollTrigger: {
           trigger: el,
+          start: "top bottom",
+          end: "center center",
+          scrub: 1,
         },
         duration: 1.05,
         y: 0,
@@ -117,9 +126,11 @@ function ReservationContactUs() {
       {
         scrollTrigger: {
           trigger: el,
+          start: "top bottom",
+          end: "center center",
+          scrub: 1,
         },
         duration: 1.05,
-        delay: 0.5,
         y: 0,
         opacity: 1,
         ease: "power4.easeOut",
@@ -138,9 +149,12 @@ function ReservationContactUs() {
       {
         scrollTrigger: {
           trigger: el,
+          start: "top bottom",
+          end: "center center",
+          scrub: 1,
         },
         duration: 1.05,
-        delay: 1,
+
         y: 0,
         opacity: 1,
         ease: "power4.easeOut",
@@ -159,9 +173,12 @@ function ReservationContactUs() {
       {
         scrollTrigger: {
           trigger: el,
+          start: "top bottom",
+          end: "center center",
+          scrub: 1,
         },
         duration: 1.05,
-        delay: 1.5,
+
         y: 0,
         opacity: 1,
         ease: "power4.easeOut",
