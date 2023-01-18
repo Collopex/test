@@ -28,7 +28,7 @@ function WomenScrollProxy() {
         duration: 1,
         x: 0,
         opacity: 1,
-        ease: "Power1.easeOut",
+        ease: "Power2.easeOut",
       }
     );
   }, []);
@@ -50,7 +50,7 @@ function WomenScrollProxy() {
         duration: 1.05,
         x: 0,
         opacity: 1,
-        ease: "Power1.easeOut",
+        ease: "Power2.easeOut",
       }
     );
   }, []);
@@ -72,7 +72,7 @@ function WomenScrollProxy() {
         duration: 1,
         x: 0,
         opacity: 1,
-        ease: "Power1.easeOut",
+        ease: "Power2.easeOut",
       }
     );
   }, []);
