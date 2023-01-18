@@ -94,7 +94,7 @@ function MenuItem() {
           <h3 className="menu-items-sub-cation ">VOTKA</h3>
           <p className="menu-items">Smirnoff</p>
           <p className="menu-items">Absolute</p>
-          <h3 className="menu-items-sub-cation ">Kokteyller</h3>
+          <h3 className="menu-items-sub-cation ">KOKTEYLLER</h3>
           <p className="menu-items">Margarita</p>
           <p className="menu-items">Martini</p>
           <p className="menu-items">Sex On The Beach</p>
@@ -114,7 +114,7 @@ function MenuItem() {
           <p className="menu-items">Patates Kızartması </p>
           <p className="menu-items">Çorba Çeşitleri</p>
           <p className="menu-items">Salatalıklar</p>
-          <h3 className="menu-items-sub-cation ">Mezeler</h3>
+          <h3 className="menu-items-sub-cation ">MEZELER</h3>
           <p className="menu-items">Haydari</p>
           <p className="menu-items">Acılı Ezme</p>
           <p className="menu-items">Yoğurtlu Biber</p>
