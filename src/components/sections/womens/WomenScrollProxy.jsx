@@ -60,7 +60,7 @@ function WomenScrollProxy() {
     gsap.fromTo(
       el,
       {
-        z: 70,
+        x: -100,
         opacity: 0,
       },
       {
@@ -71,7 +71,7 @@ function WomenScrollProxy() {
           scrub: 1,
         },
         duration: 1,
-        z: 0,
+        x: 0,
         opacity: 1,
         ease: "power4.easeOut",
       }

@@ -35,17 +35,17 @@ function AboutCaption() {
     gsap.fromTo(
       el,
       {
-        y: 100,
-        opacity: 0,
+        x: 100,
+        opacity: 0.25,
       },
       {
         scrollTrigger: {
           trigger: el,
           start: "top bottom",
           end: "center center",
-          scrub: 1,
+          scrub: true,
         },
-        y: 0,
+        x: 0,
         opacity: 1,
         ease: "power4.easeOut",
       }

@@ -1,8 +1,3 @@
-import FacebookReview from "../../util/FacebookReview";
-import FoursquareReview from "../../util/FoursquareReview";
-import GoogleReview from "../../util/GoogleReview";
-import RestaurantGuru from "../../util/RestaurantGuru";
-
 import { useState, useEffect, useRef } from "react";
 import { db } from "../../../firebaseConfig";
 import { addDoc, collection } from "firebase/firestore";
@@ -41,10 +36,6 @@ function ReservationContactUs() {
 
   const messageRef = useRef(null);
   const locationRef = useRef(null);
-  const foursquareRef = useRef(null);
-  const restaurantGuruRef = useRef(null);
-  const googleRef = useRef(null);
-  const facebookRef = useRef(null);
 
   useEffect(() => {
     const el = messageRef.current;
@@ -59,7 +50,7 @@ function ReservationContactUs() {
           trigger: el,
           start: "top bottom",
           end: "center center",
-          scrub: 1,
+          scrub: 2,
         },
         duration: 1.05,
         x: 0,
@@ -82,7 +73,7 @@ function ReservationContactUs() {
           trigger: el,
           start: "top bottom",
           end: "center center",
-          scrub: 1,
+          scrub: 2,
         },
         duration: 1.05,
         x: 0,
@@ -92,121 +83,8 @@ function ReservationContactUs() {
     );
   }, []);
 
-  useEffect(() => {
-    const el = foursquareRef.current;
-    gsap.fromTo(
-      el,
-      {
-        y: 70,
-        opacity: 0,
-      },
-      {
-        scrollTrigger: {
-          trigger: el,
-          start: "top bottom",
-          end: "center center",
-          scrub: 1,
-        },
-        duration: 1.05,
-        y: 0,
-        opacity: 1,
-        ease: "power4.easeOut",
-      }
-    );
-  }, []);
-
-  useEffect(() => {
-    const el = restaurantGuruRef.current;
-    gsap.fromTo(
-      el,
-      {
-        y: 70,
-        opacity: 0,
-      },
-      {
-        scrollTrigger: {
-          trigger: el,
-          start: "top bottom",
-          end: "center center",
-          scrub: 1,
-        },
-        duration: 1.05,
-        y: 0,
-        opacity: 1,
-        ease: "power4.easeOut",
-      }
-    );
-  }, []);
-
-  useEffect(() => {
-    const el = googleRef.current;
-    gsap.fromTo(
-      el,
-      {
-        y: 70,
-        opacity: 0,
-      },
-      {
-        scrollTrigger: {
-          trigger: el,
-          start: "top bottom",
-          end: "center center",
-          scrub: 1,
-        },
-        duration: 1.05,
-
-        y: 0,
-        opacity: 1,
-        ease: "power4.easeOut",
-      }
-    );
-  }, []);
-
-  useEffect(() => {
-    const el = facebookRef.current;
-    gsap.fromTo(
-      el,
-      {
-        y: 70,
-        opacity: 0,
-      },
-      {
-        scrollTrigger: {
-          trigger: el,
-          start: "top bottom",
-          end: "center center",
-          scrub: 1,
-        },
-        duration: 1.05,
-
-        y: 0,
-        opacity: 1,
-        ease: "power4.easeOut",
-      }
-    );
-  }, []);
-
   return (
     <>
-      <div className="reviews">
-        <div className="review" ref={foursquareRef}>
-          <FoursquareReview />
-          <span className="review-pts">8.4/10</span>
-        </div>
-        <div className="review" ref={restaurantGuruRef}>
-          <RestaurantGuru />
-          <span className="review-pts">4/5</span>
-        </div>
-        <div className="review" ref={googleRef}>
-          <GoogleReview />
-          <span className="review-pts">4.6/5</span>
-        </div>
-        <div className="review" ref={facebookRef}>
-          <FacebookReview />
-          <span className="review-pts">3.4/5</span>
-        </div>
-      </div>
-
       <div className=" grid-50-50">
         <div ref={messageRef}>
           <h2 className="thoughts-caption">Fikirleriniz Bizim İçin Değerli</h2>

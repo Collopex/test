@@ -13,7 +13,7 @@ function MenuItem() {
     gsap.fromTo(
       el,
       {
-        y: 60,
+        y: 120,
         opacity: 0,
       },
       {
@@ -35,7 +35,7 @@ function MenuItem() {
     gsap.fromTo(
       el,
       {
-        x: -60,
+        x: -120,
         opacity: 0,
       },
       {
@@ -57,7 +57,7 @@ function MenuItem() {
     gsap.fromTo(
       el,
       {
-        x: 60,
+        x: 120,
         opacity: 0,
       },
       {

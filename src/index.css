@@ -61,6 +61,25 @@ li {
   font-size: 1.6rem;
 }
 
+#logos {
+  stroke-dasharray: 2549.703369140625;
+  stroke-dashoffset: 2549.703369140625;
+  animation: loader 12s infinite;
+}
+
+.logo-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes loader {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 /****************************  NAVBAR  ****************************/
 #hero-logo {
   width: 5.8rem;
@@ -435,7 +454,7 @@ nav .nav-close-btn {
 }
 
 .reviews {
-  margin-top: 3rem;
+  margin-top: 9rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;

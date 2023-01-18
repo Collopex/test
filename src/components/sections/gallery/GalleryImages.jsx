@@ -11,8 +11,8 @@ function GalleryImages() {
     gsap.fromTo(
       el,
       {
-        z: 50,
-        opacity: 1,
+        z: 100,
+        opacity: 0.7,
       },
       {
         scrollTrigger: {
