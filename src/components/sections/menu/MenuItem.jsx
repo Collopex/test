@@ -26,7 +26,7 @@ function MenuItem() {
         duration: 1.05,
         y: 0,
         opacity: 1,
-        ease: "Power2.easeOut",
+        ease: "Power2.easeIn",
       }
     );
   }, []);
@@ -48,7 +48,7 @@ function MenuItem() {
         duration: 1.05,
         x: 0,
         opacity: 1,
-        ease: "Power2.easeOut",
+        ease: "Power2.easeIn",
       }
     );
   }, []);
@@ -70,7 +70,7 @@ function MenuItem() {
         duration: 1.05,
         x: 0,
         opacity: 1,
-        ease: "Power2.easeOut",
+        ease: "Power2.easeIn",
       }
     );
   }, []);
