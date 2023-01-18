@@ -54,8 +54,10 @@ function AboutCaption() {
 
   return (
     <>
-      <div ref={aboutCaptionRef}>
-        <h2 className="caption-about">Hakkımızda</h2>
+      <div>
+        <h2 className="caption-about" ref={aboutCaptionRef}>
+          Hakkımızda
+        </h2>
       </div>
       <div className="aboutus-container">
         <p className="aboutus-description" ref={aboutDetailsRef}>

@@ -96,7 +96,7 @@ li {
 
 header {
   display: grid;
-  position: absolute;
+  position: fixed;
   grid-auto-flow: column;
   width: 100%;
   justify-content: space-between;
