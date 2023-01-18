@@ -55,7 +55,7 @@ function ReservationContactUs() {
         duration: 1.05,
         x: 0,
         opacity: 1,
-        ease: "Power2.easeIn",
+        ease: "Power2.easeInOut",
       }
     );
   }, []);
@@ -78,7 +78,7 @@ function ReservationContactUs() {
         duration: 1.05,
         x: 0,
         opacity: 1,
-        ease: "Power2.easeIn",
+        ease: "Power2.easeInOut",
       }
     );
   }, []);
