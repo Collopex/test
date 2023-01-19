@@ -778,7 +778,7 @@ textarea::placeholder {
 }
 
 /**************************** MEDIA QUERIES****************************/
-@media only screen and (min-width: 95em) {
+@media only screen and (min-width: 115em) {
   #hero-logo {
     width: 10rem;
     height: 7rem;
