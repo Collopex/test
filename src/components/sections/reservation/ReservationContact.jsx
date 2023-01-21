@@ -48,9 +48,6 @@ function ReservationContactUs() {
       {
         scrollTrigger: {
           trigger: el,
-          start: "top bottom",
-          end: "center center",
-          scrub: 2,
         },
         duration: 1.05,
         x: 0,
@@ -71,9 +68,6 @@ function ReservationContactUs() {
       {
         scrollTrigger: {
           trigger: el,
-          start: "top bottom",
-          end: "center center",
-          scrub: 2,
         },
         duration: 1.05,
         x: 0,

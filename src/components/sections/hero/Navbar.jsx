@@ -46,18 +46,6 @@ function NavbarWrapper() {
           <ul className="navbar">
             <li>
               <Link
-                to="hero"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={1500}
-                onClick={toggleNavbar}
-              >
-                Ana Sayfa
-              </Link>
-            </li>
-            <li>
-              <Link
                 to="about"
                 spy={true}
                 smooth={true}

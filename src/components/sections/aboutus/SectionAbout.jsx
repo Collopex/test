@@ -12,15 +12,12 @@ function AboutCaption() {
     gsap.fromTo(
       el,
       {
-        x: -50,
+        x: -100,
         opacity: 0,
       },
       {
         scrollTrigger: {
           trigger: el,
-          start: "top bottom",
-          end: "center center",
-          scrub: 2,
         },
         duration: 1.05,
         x: 0,
@@ -35,17 +32,16 @@ function AboutCaption() {
     gsap.fromTo(
       el,
       {
-        x: 50,
+        x: 100,
         opacity: 0.25,
+        duration: 1.25,
       },
       {
         scrollTrigger: {
           trigger: el,
-          start: "top bottom",
-          end: "center center",
-          scrub: 2,
         },
         x: 0,
+        duration: 1.25,
         opacity: 1,
         ease: "Power2.easeOut",
       }

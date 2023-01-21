@@ -15,15 +15,13 @@ function MenuItem() {
       {
         y: 120,
         opacity: 0,
+        duration: 1.25,
       },
       {
         scrollTrigger: {
           trigger: el,
-          start: "top bottom",
-          end: "center center",
-          scrub: 3,
         },
-        duration: 1.05,
+        duration: 1.25,
         y: 0,
         opacity: 1,
         ease: "Power2.easeOut",
@@ -37,15 +35,13 @@ function MenuItem() {
       {
         x: -120,
         opacity: 0,
+        duration: 1.25,
       },
       {
         scrollTrigger: {
           trigger: el,
-          start: "top bottom",
-          end: "center center",
-          scrub: 3,
         },
-        duration: 1.05,
+        duration: 1.25,
         x: 0,
         opacity: 1,
         ease: "Power2.easeOut",
@@ -59,15 +55,13 @@ function MenuItem() {
       {
         x: 120,
         opacity: 0,
+        duration: 1.25,
       },
       {
         scrollTrigger: {
           trigger: el,
-          start: "top bottom",
-          end: "center center",
-          scrub: 3,
         },
-        duration: 1.05,
+        duration: 1.25,
         x: 0,
         opacity: 1,
         ease: "Power2.easeOut",

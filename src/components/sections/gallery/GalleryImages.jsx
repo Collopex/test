@@ -13,15 +13,13 @@ function GalleryImages() {
       {
         z: 100,
         opacity: 0.7,
+        duration: 1.25,
       },
       {
         scrollTrigger: {
           trigger: el,
-          start: "top bottom",
-          end: "center center",
-          scrub: 1,
         },
-        duration: 1.05,
+        duration: 1.25,
         z: 0,
         opacity: 1,
         ease: "power4.easeOut",

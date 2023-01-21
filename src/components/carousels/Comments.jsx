@@ -23,15 +23,15 @@ function CommentSlider() {
       el,
       {
         y: 70,
+        duration: 1.25,
+        opacity: 0,
       },
       {
         scrollTrigger: {
           trigger: el,
-          start: "top bottom",
-          end: "center center",
-          scrub: 2,
         },
-        duration: 1.05,
+        opacity: 1,
+        duration: 1.25,
         y: 0,
         ease: "power4.easeOut",
       }
@@ -44,15 +44,16 @@ function CommentSlider() {
       el,
       {
         y: 70,
+        duration: 1.25,
+        opacity: 0,
       },
       {
         scrollTrigger: {
           trigger: el,
-          start: "top bottom",
-          end: "center center",
-          scrub: 2,
         },
-        duration: 1.05,
+        duration: 1.25,
+        delay: 0.5,
+        opacity: 1,
         y: 0,
         ease: "power4.easeOut",
       }
@@ -65,15 +66,15 @@ function CommentSlider() {
       el,
       {
         y: 70,
+        opacity: 0,
       },
       {
         scrollTrigger: {
           trigger: el,
-          start: "top bottom",
-          end: "center center",
-          scrub: 2,
         },
-        duration: 1.05,
+        duration: 1.25,
+        delay: 1,
+        opacity: 1,
         y: 0,
         ease: "power4.easeOut",
       }
@@ -86,15 +87,15 @@ function CommentSlider() {
       el,
       {
         y: 70,
+        opacity: 0,
       },
       {
         scrollTrigger: {
           trigger: el,
-          start: "top bottom",
-          end: "center center",
-          scrub: 2,
         },
-        duration: 1.05,
+        duration: 1.25,
+        delay: 1.5,
+        opacity: 1,
         y: 0,
         ease: "power4.easeOut",
       }

@@ -17,15 +17,13 @@ function WomenScrollProxy() {
       {
         x: -100,
         opacity: 0,
+        duration: 1.25,
       },
       {
         scrollTrigger: {
           trigger: el,
-          start: "top bottom",
-          end: "center center",
-          scrub: 2,
         },
-        duration: 1,
+        duration: 1.25,
         x: 0,
         opacity: 1,
         ease: "Power2.easeOut",
@@ -43,11 +41,8 @@ function WomenScrollProxy() {
       {
         scrollTrigger: {
           trigger: el,
-          start: "top bottom",
-          end: "center center",
-          scrub: 2,
         },
-        duration: 1.05,
+        duration: 1.25,
         x: 0,
         opacity: 1,
         ease: "Power2.easeOut",
@@ -65,11 +60,8 @@ function WomenScrollProxy() {
       {
         scrollTrigger: {
           trigger: el,
-          start: "top bottom",
-          end: "center center",
-          scrub: 2,
         },
-        duration: 1,
+        duration: 1.25,
         x: 0,
         opacity: 1,
         ease: "Power2.easeOut",
